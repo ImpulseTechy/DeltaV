@@ -25,7 +25,7 @@ export async function GET(request: Request) {
         }
       }
 
-      const redirectUrl = next ? `/${next}` : '/dashboard'
+      const redirectUrl = next ? (next.startsWith('/') ? next : `/${next}`) : '/dashboard'
       return NextResponse.redirect(`${origin}${redirectUrl}`)
     }
   }
