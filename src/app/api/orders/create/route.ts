@@ -46,10 +46,13 @@ export async function POST(request: Request) {
     const gst = Math.round(price * 0.18)
     const total = price + gst
 
+    const keyId = process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || ''
+    const keySecret = process.env.RAZORPAY_KEY_SECRET || ''
+
     // 3. Create Razorpay order
     const razorpay = new Razorpay({
-      key_id: process.env.RAZORPAY_KEY_ID!,
-      key_secret: process.env.RAZORPAY_KEY_SECRET!
+      key_id: keyId,
+      key_secret: keySecret
     })
 
     const rzpOrder = await razorpay.orders.create({
@@ -82,7 +85,7 @@ export async function POST(request: Request) {
       orderId: rzpOrder.id,
       amount: rzpOrder.amount,
       currency: rzpOrder.currency,
-      keyId: process.env.RAZORPAY_KEY_ID
+      keyId: keyId
     })
 
   } catch (error: any) {

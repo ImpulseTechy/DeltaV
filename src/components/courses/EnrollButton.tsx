@@ -15,6 +15,12 @@ interface EnrollButtonProps {
   duration?: string
 }
 
+const COHORT_MAP: Record<string, string> = {
+  'esp32-iot-fundamentals': 'esp32-july-2026',
+  'embedded-systems-rtos': 'rtos-august-2026',
+  'plc-industrial-automation': 'plc-august-2026'
+}
+
 export default function EnrollButton({ slug, price, isCompact = false, courseTitle = 'Course', duration = 'Self-paced' }: EnrollButtonProps) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
@@ -46,6 +52,8 @@ export default function EnrollButton({ slug, price, isCompact = false, courseTit
     maximumFractionDigits: 0,
   }).format(price)
 
+  const cohortId = COHORT_MAP[slug] || 'esp32-july-2026'
+
   return (
     <>
       <Button 
@@ -64,7 +72,7 @@ export default function EnrollButton({ slug, price, isCompact = false, courseTit
           cohortDates="Starts Next Week" // Hardcoded mock
           duration={duration}
           price={price}
-          cohortId="default-cohort-1" // Mock cohort ID from the DB snippet
+          cohortId={cohortId}
           slug={slug}
           onClose={() => setShowModal(false)}
         />

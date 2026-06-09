@@ -14,7 +14,7 @@ export default function AuthPage() {
 
   const [step, setStep] = useState<AuthStep>('EMAIL')
   const [email, setEmail] = useState('')
-  const [otp, setOtp] = useState(['', '', '', '', '', ''])
+  const [otp, setOtp] = useState(['', '', '', '', '', '', '', ''])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   
@@ -44,10 +44,16 @@ export default function AuthPage() {
     setIsLoading(true)
     setError(null)
 
+    let redirectUrl = window.location.origin + '/auth/callback'
+    if (nextParam) {
+      redirectUrl += `?next=${encodeURIComponent(nextParam)}`
+    }
+
     const { error } = await supabase.auth.signInWithOtp({ 
       email,
       options: {
-        shouldCreateUser: true
+        shouldCreateUser: true,
+        emailRedirectTo: redirectUrl
       }
     })
 
@@ -90,23 +96,35 @@ export default function AuthPage() {
   const handleVerifyOtp = async (e: React.FormEvent) => {
     e.preventDefault()
     const token = otp.join('')
-    if (token.length !== 6) return
+    if (token.length !== 8) return
 
     setIsLoading(true)
     setError(null)
 
-    const { error } = await supabase.auth.verifyOtp({ 
+    // Try verifying as magiclink first (for existing users)
+    let { data, error } = await supabase.auth.verifyOtp({ 
       email, 
       token, 
-      type: 'email' 
+      type: 'magiclink' 
     })
+
+    // If that fails, try verifying as signup (for new users)
+    if (error) {
+      const signupResult = await supabase.auth.verifyOtp({
+        email,
+        token,
+        type: 'signup'
+      })
+      data = signupResult.data
+      error = signupResult.error
+    }
 
     if (error) {
       setError(error.message)
       setIsLoading(false)
     } else {
       // verification successful, redirect logic handled by router
-      const nextUrl = nextParam ? `/${nextParam}` : '/dashboard'
+      const nextUrl = nextParam ? (nextParam.startsWith('/') ? nextParam : `/${nextParam}`) : '/dashboard'
       // We still need to check profiles table, but the prompt says auth/callback handles OAuth
       // Actually, for OTP, verifyOtp logs the user in immediately on the client.
       // So we should check the profile right here to decide where to go.
@@ -132,7 +150,7 @@ export default function AuthPage() {
     newOtp[index] = value.slice(-1) // Take only last digit if multiple were entered
     setOtp(newOtp)
 
-    if (value && index < 5) {
+    if (value && index < 7) {
       inputRefs.current[index + 1]?.focus()
     }
   }
@@ -148,15 +166,15 @@ export default function AuthPage() {
     const pastedData = e.clipboardData.getData('text').trim()
     
     if (/^\d+$/.test(pastedData)) {
-      const digits = pastedData.slice(0, 6).split('')
+      const digits = pastedData.slice(0, 8).split('')
       const newOtp = [...otp]
       digits.forEach((digit, i) => {
-        if (i < 6) newOtp[i] = digit
+        if (i < 8) newOtp[i] = digit
       })
       setOtp(newOtp)
       
       // Focus the next empty input or the last one
-      const nextIndex = Math.min(digits.length, 5)
+      const nextIndex = Math.min(digits.length, 7)
       inputRefs.current[nextIndex]?.focus()
     }
   }
@@ -245,7 +263,7 @@ export default function AuthPage() {
           <form onSubmit={handleVerifyOtp} className="space-y-6">
             <div className="text-center">
               <p className="text-[#A1A1AA] text-sm mb-4">
-                We sent a 6-digit code to <br/>
+                We sent a verification code to <br/>
                 <span className="text-white font-medium">{email}</span>
               </p>
 
@@ -275,7 +293,7 @@ export default function AuthPage() {
               <p className="text-red-500 text-sm text-center">{error}</p>
             )}
 
-            <Button type="submit" className="w-full" disabled={isLoading || otp.join('').length !== 6}>
+            <Button type="submit" className="w-full" disabled={isLoading || otp.join('').length !== 8}>
               {isLoading ? 'Verifying...' : 'Verify Code →'}
             </Button>
 

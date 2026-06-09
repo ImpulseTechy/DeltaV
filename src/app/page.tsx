@@ -35,36 +35,42 @@ export default function Home() {
   const topics = [
     {
       id: 'WS-01',
+      slug: 'iot-esp32',
       icon: Wifi,
       title: 'IoT with ESP32',
       desc: 'Sensors, MQTT, cloud dashboards. Fully hands-on.'
     },
     {
       id: 'WS-02',
+      slug: 'robotics-embedded',
       icon: Cpu,
       title: 'Robotics & Embedded',
       desc: 'Arduino + sensors + autonomy logic.'
     },
     {
       id: 'WS-03',
+      slug: 'cubesat-design',
       icon: Satellite,
       title: 'CubeSat Design',
       desc: 'Build a 1U CubeSat structure and ground station.'
     },
     {
       id: 'WS-04',
+      slug: 'plc-automation',
       icon: Settings,
       title: 'PLC Automation',
       desc: 'Ladder logic, Siemens TIA Portal, motor control.'
     },
     {
       id: 'WS-05',
+      slug: 'vfd-motor-drives',
       icon: Zap,
       title: 'VFD & Motor Drives',
       desc: 'Variable frequency drives for EEE students.'
     },
     {
       id: 'WS-06',
+      slug: 'online-webinar',
       icon: Video,
       title: 'Online Webinar',
       desc: 'Any topic, online, 2–3 hours, zero equipment needed.'
@@ -221,7 +227,7 @@ export default function Home() {
                     {topic.desc}
                   </p>
                   <div className="mt-auto pt-2">
-                    <Button variant="text" size="sm" href={`/workshops/${topic.id.toLowerCase()}`}>
+                    <Button variant="text" size="sm" href={`/workshops/${topic.slug}`}>
                       View Details →
                     </Button>
                   </div>
@@ -249,7 +255,7 @@ export default function Home() {
               nextBatch="July 14 2026"
               price="₹1,999"
               status="open"
-              slug="iot-esp32"
+              slug="esp32-iot-fundamentals"
             />
             <CourseCard
               title="Embedded Systems & RTOS"
@@ -350,7 +356,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <Button variant="primary" size="lg" href="/workshops#book" className="px-8">
+              <Button variant="primary" size="lg" href="/book-workshop" className="px-8">
                 Book a Free Workshop →
               </Button>
             </div>

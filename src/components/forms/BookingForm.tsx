@@ -82,6 +82,21 @@ export default function BookingForm() {
     }
   }
 
+  const onError = (formErrors: any) => {
+    console.warn('Form validation failed:', formErrors)
+    const errorKeys = Object.keys(formErrors)
+    if (errorKeys.length > 0) {
+      const firstErrorKey = errorKeys[0]
+      const element = document.getElementsByName(firstErrorKey)[0]
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        if (element instanceof HTMLInputElement || element instanceof HTMLSelectElement || element instanceof HTMLTextAreaElement) {
+          element.focus({ preventScroll: true })
+        }
+      }
+    }
+  }
+
   if (isSuccess) {
     return (
       <div className="flex flex-col items-center justify-center text-center py-16 px-4 bg-bg-secondary rounded-lg border border-border h-full min-h-[500px]">
@@ -107,7 +122,7 @@ export default function BookingForm() {
 
   return (
     <div className="bg-bg-primary">
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-6">
         
         {submitError && (
           <div className="p-4 rounded border border-red-500/50 bg-red-500/10 text-red-200 font-body text-sm">
@@ -318,6 +333,7 @@ export default function BookingForm() {
 
         <div className="pt-6 border-t border-border">
           <Button 
+            type="submit"
             variant="primary" 
             size="lg" 
             className="w-full"

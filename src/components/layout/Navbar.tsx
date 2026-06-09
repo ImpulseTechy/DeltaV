@@ -40,7 +40,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Courses', href: '/courses' },
-    { name: 'Workshops', href: '/workshops' },
+    { name: 'Workshops', href: '/#workshop-topics' },
     { name: 'Webinars', href: '/webinars' },
     { name: 'About', href: '/about' },
   ]
@@ -87,7 +87,7 @@ export default function Navbar() {
 
           {/* Right: Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm" href="/workshops#book">
+            <Button variant="ghost" size="sm" href="/book-workshop">
               Book a Workshop
             </Button>
 
@@ -181,7 +181,7 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="md"
-              href="/workshops#book"
+              href="/book-workshop"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full"
             >

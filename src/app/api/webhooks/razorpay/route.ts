@@ -5,8 +5,10 @@ import { Resend } from 'resend'
 
 export async function POST(request: Request) {
   // Initialize Supabase with service role key to bypass RLS for webhook
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder-url.supabase.co'
-  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-key'
+  const rawUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+  const supabaseUrl = rawUrl.startsWith('http') ? rawUrl : 'https://placeholder-url.supabase.co'
+  const rawKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-key'
+  const supabaseServiceKey = (rawKey && !rawKey.includes('placeholder') && !rawKey.includes('your_')) ? rawKey : 'placeholder-key'
   const supabase = createClient(supabaseUrl, supabaseServiceKey)
   const resend = new Resend(process.env.RESEND_API_KEY || 'placeholder-key')
   try {

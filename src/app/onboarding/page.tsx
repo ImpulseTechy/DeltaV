@@ -70,7 +70,7 @@ export default function OnboardingPage() {
       setError(upsertError.message)
       setIsLoading(false)
     } else {
-      const nextUrl = nextParam ? `/${nextParam}` : '/dashboard'
+      const nextUrl = nextParam ? (nextParam.startsWith('/') ? nextParam : `/${nextParam}`) : '/dashboard'
       router.push(nextUrl)
     }
   }
