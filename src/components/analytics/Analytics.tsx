@@ -2,7 +2,7 @@
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
@@ -59,28 +59,6 @@ export const fireBookingRequestSubmitted = (topic: string, college: string) => {
 }
 
 export default function Analytics() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-
-  // Track pageviews on route change
-  useEffect(() => {
-    if (pathname && typeof window !== 'undefined') {
-      const url = pathname + searchParams.toString()
-      
-      // GA4 Pageview
-      if (GA_MEASUREMENT_ID && window.gtag) {
-        window.gtag('config', GA_MEASUREMENT_ID, {
-          page_path: url,
-        })
-      }
-      
-      // Meta Pixel Pageview
-      if (META_PIXEL_ID && window.fbq) {
-        window.fbq('track', 'PageView')
-      }
-    }
-  }, [pathname, searchParams])
-
   return (
     <>
       {/* Google Analytics 4 */}
@@ -128,6 +106,37 @@ export default function Analytics() {
           }}
         />
       )}
+
+      <Suspense fallback={null}>
+        <AnalyticsTracker />
+      </Suspense>
     </>
   )
+}
+
+function AnalyticsTracker() {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  // Track pageviews on route change
+  useEffect(() => {
+    if (pathname && typeof window !== 'undefined') {
+      const searchStr = searchParams.toString()
+      const url = pathname + (searchStr ? `?${searchStr}` : '')
+      
+      // GA4 Pageview
+      if (GA_MEASUREMENT_ID && window.gtag) {
+        window.gtag('config', GA_MEASUREMENT_ID, {
+          page_path: url,
+        })
+      }
+      
+      // Meta Pixel Pageview
+      if (META_PIXEL_ID && window.fbq) {
+        window.fbq('track', 'PageView')
+      }
+    }
+  }, [pathname, searchParams])
+
+  return null
 }
