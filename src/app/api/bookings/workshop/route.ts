@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
           whatsapp_number: data.whatsappNumber,
           workshop_topic: data.workshopTopic,
           preferred_date: data.preferredDate,
-          alternate_date: data.alternateDate,
+          alternate_date: data.alternateDate || null,
           expected_students: data.expectedStudents,
           venue: data.venue,
           additional_notes: data.additionalNotes,
