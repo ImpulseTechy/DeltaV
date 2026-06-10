@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
+import Image from 'next/image'
 
 const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -66,8 +67,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1: Brand details */}
           <div className="col-span-2 lg:col-span-1 flex flex-col gap-4">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
-              <span className="text-orange font-mono text-2xl font-bold">Δ</span>
+            <Link href="/" className="flex items-center gap-3 group w-fit">
+              <Image 
+                src="/logo-cropped.png" 
+                alt="Delta V Logo" 
+                width={299} 
+                height={179} 
+                className="h-7 w-auto object-contain"
+              />
               <span className="font-display text-white text-xl tracking-[0.15em] font-semibold transition-colors group-hover:text-orange">
                 DELTA V
               </span>

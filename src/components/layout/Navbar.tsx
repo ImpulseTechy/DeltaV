@@ -7,6 +7,7 @@ import { Menu, X, ChevronDown, User, LogOut, LayoutDashboard } from 'lucide-reac
 import { createClient } from '@/lib/supabase/client'
 import Button from '../ui/Button'
 import { clsx } from 'clsx'
+import Image from 'next/image'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -55,9 +56,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Left: Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center gap-2 group">
-              <span className="text-orange font-mono text-2xl font-bold">Δ</span>
-              <span className="font-display text-white text-xl tracking-[0.15em] font-semibold transition-colors group-hover:text-orange">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image 
+                src="/logo-cropped.png" 
+                alt="Delta V Logo" 
+                width={299} 
+                height={179} 
+                className="h-7 w-auto object-contain"
+              />
+              <span className="font-display text-white text-xl tracking-[0.15em] font-semibold transition-colors group-hover:text-orange hidden sm:block">
                 DELTA V
               </span>
             </Link>

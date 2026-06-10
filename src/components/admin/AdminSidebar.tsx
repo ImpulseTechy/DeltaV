@@ -19,6 +19,7 @@ import { clsx } from 'clsx'
 import { createClient } from '@/lib/supabase/client'
 import { useState } from 'react'
 import { useToast } from '@/components/ui/Toast'
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { name: 'Overview', href: '/admin', icon: LayoutDashboard },
@@ -55,8 +56,8 @@ export default function AdminSidebar() {
       {/* Mobile Top Bar */}
       <div className="lg:hidden flex items-center justify-between p-4 bg-[#0D0D0D] border-b border-[#3F3F46]">
         <div className="flex items-center gap-2">
-          <Link href="/admin" className="font-heading font-bold text-2xl tracking-wide text-white">
-            <span className="text-brand-primary mr-1">Δ</span> DELTA V
+          <Link href="/admin" className="font-heading font-bold text-2xl tracking-wide text-white flex items-center gap-2">
+            <Image src="/logo-cropped.png" alt="Logo" width={299} height={179} className="h-6 w-auto" /> DELTA V
           </Link>
           <span className="bg-brand-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
             ADMIN
@@ -82,8 +83,8 @@ export default function AdminSidebar() {
       )}>
         <div className="p-6 flex items-center justify-between lg:justify-start gap-2 border-b border-[#3F3F46] lg:border-none">
           <div className="flex items-center gap-2">
-            <Link href="/admin" className="font-heading font-bold text-2xl tracking-wide text-white">
-              <span className="text-brand-primary mr-1">Δ</span> DELTA V
+            <Link href="/admin" className="font-heading font-bold text-2xl tracking-wide text-white flex items-center gap-2">
+              <Image src="/logo-cropped.png" alt="Logo" width={299} height={179} className="h-6 w-auto" /> DELTA V
             </Link>
             <span className="bg-brand-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
               ADMIN

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
+import Image from 'next/image'
 import { 
   LayoutDashboard, 
   BookOpen, 
@@ -44,9 +45,17 @@ export default function Sidebar({ role }: SidebarProps) {
   const SidebarContent = () => (
     <div className="flex flex-col h-full bg-[#0D0D0D] border-r border-[#3F3F46]">
       <div className="h-16 flex items-center px-6 border-b border-[#3F3F46]">
-        <Link href="/dashboard" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-          <span className="text-orange text-xl font-bold">Δ</span>
-          <span className="text-white font-display font-semibold tracking-wider text-lg">DELTA V</span>
+        <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
+          <Image 
+            src="/logo-cropped.png" 
+            alt="Delta V Logo" 
+            width={299} 
+            height={179} 
+            className="h-6 w-auto object-contain"
+          />
+          <span className="font-display text-white text-lg tracking-[0.15em] font-semibold transition-colors group-hover:text-orange">
+            DELTA V
+          </span>
         </Link>
       </div>
 
