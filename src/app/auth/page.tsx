@@ -130,9 +130,13 @@ function AuthContent() {
       // So we should check the profile right here to decide where to go.
       const { data: { user } } = await supabase.auth.getUser()
       if (user) {
-        const { data: profile } = await supabase.from('profiles').select('id').eq('id', user.id).single()
+        const { data: profile } = await supabase.from('profiles').select('id, role').eq('id', user.id).single()
         if (profile) {
-          router.push(nextUrl)
+          if (profile.role === 'admin' && !nextParam) {
+            router.push('/admin')
+          } else {
+            router.push(nextUrl)
+          }
         } else {
           router.push(`/onboarding${nextParam ? `?next=${nextParam}` : ''}`)
         }

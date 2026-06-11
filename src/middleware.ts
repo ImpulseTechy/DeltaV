@@ -51,16 +51,30 @@ export async function middleware(request: NextRequest) {
   // 2. Redirect to /dashboard if accessing admin and role is not admin in profiles table
   if (isAdminRoute && user) {
     try {
+      console.log(`[Middleware] Checking admin role for user: ${user.id} (${user.email})`)
       const { data: profile, error } = await supabase
         .from('profiles')
         .select('role')
         .eq('id', user.id)
         .single()
 
-      if (error || !profile || profile.role !== 'admin') {
+      if (error) {
+        console.error('[Middleware] Supabase query error checking admin role:', error)
+        return NextResponse.redirect(new URL('/dashboard', request.url))
+      }
+
+      if (!profile) {
+        console.warn('[Middleware] Profile not found for user:', user.id)
+        return NextResponse.redirect(new URL('/dashboard', request.url))
+      }
+
+      console.log(`[Middleware] User role found: ${profile.role}`)
+      if (profile.role !== 'admin') {
+        console.warn(`[Middleware] Access denied. User role is '${profile.role}' instead of 'admin'`)
         return NextResponse.redirect(new URL('/dashboard', request.url))
       }
     } catch (err) {
+      console.error('[Middleware] Exception caught during admin check:', err)
       // Safeguard redirect if db check errors out
       return NextResponse.redirect(new URL('/dashboard', request.url))
     }
