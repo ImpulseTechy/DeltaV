@@ -15,13 +15,18 @@ export async function GET(request: Request) {
       if (user) {
         const { data: profile } = await supabase
           .from('profiles')
-          .select('id')
+          .select('id, role')
           .eq('id', user.id)
           .single()
 
         if (!profile) {
           const redirectUrl = next ? `/onboarding?next=${encodeURIComponent(next)}` : '/onboarding'
           return NextResponse.redirect(`${origin}${redirectUrl}`)
+        }
+
+        // If user is admin and no next path is requested, redirect directly to /admin
+        if (profile.role === 'admin' && !next) {
+          return NextResponse.redirect(`${origin}/admin`)
         }
       }
 
