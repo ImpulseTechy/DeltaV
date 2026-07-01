@@ -13,7 +13,8 @@ import {
   Edge,
   ReactFlowProvider,
   useReactFlow,
-  BackgroundVariant
+  BackgroundVariant,
+  PanOnScrollMode
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 import { Search, Users, ArrowLeft } from 'lucide-react'
@@ -42,7 +43,9 @@ function DiagramContent({
 }: RoadmapDiagramProps) {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const selectedNodeId = searchParams.get('node')
+  
+  // Use local state to avoid slow Server Component re-renders on click
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(searchParams.get('node'))
 
   const { setCenter } = useReactFlow()
   
@@ -89,13 +92,28 @@ function DiagramContent({
         if (status === 'done') doneNodes++
         // Determine if selected
         const isSelected = n.id === selectedNodeId
-        return { ...n, selected: isSelected, data: { ...n.data, status } }
+        const isDimmed = !!selectedNodeId && !isSelected
+        return { ...n, selected: isSelected, data: { ...n.data, status, isDimmed } }
       }
       return n
     }))
-    
     setCompletedCount(doneNodes)
-  }, [serverProgress, userLoggedIn, roadmapId, setNodes, selectedNodeId])
+    
+    setEdges((eds) => eds.map((e) => {
+      const sourceDone = progress[e.source] === 'done'
+      const targetDone = progress[e.target] === 'done'
+      const bothDone = sourceDone && targetDone
+      
+      return {
+        ...e,
+        animated: !bothDone,
+        style: {
+          ...e.style,
+          strokeDasharray: bothDone ? 'none' : '6,6'
+        }
+      }
+    }))
+  }, [serverProgress, userLoggedIn, roadmapId, setNodes, setEdges, selectedNodeId])
 
   // Auto-pan to selected node on load
   useEffect(() => {
@@ -136,13 +154,18 @@ function DiagramContent({
     }
   }, [searchQuery, activeFilter, setNodes, setCenter])
 
-  const onNodeClick = useCallback((event: React.MouseEvent, node: Node) => {
+  const onNodeClick = useCallback((_: any, node: Node) => {
+    const nodeId = node.id
     if (node.data.type === 'group_label') return
-    router.push(`?node=${node.id}`, { scroll: false })
-  }, [router])
+    
+    // Auto-update URL query param without triggering a full Server Component fetch
+    setSelectedNodeId(nodeId)
+    window.history.replaceState(null, '', `?node=${nodeId}`)
+  }, [])
 
   const handleCloseSidebar = () => {
-    router.push('?', { scroll: false })
+    setSelectedNodeId(null)
+    window.history.replaceState(null, '', window.location.pathname)
   }
 
   const handleStatusChange = async (nodeId: string, status: 'pending' | 'in_progress' | 'done') => {
@@ -188,6 +211,11 @@ function DiagramContent({
   const handleNavigate = (nodeId: string) => {
     router.push(`?node=${nodeId}`, { scroll: false })
   }
+
+  // Calculate dynamic boundaries so you can't scroll into infinity
+  const maxX = useMemo(() => Math.max(1500, ...initialNodes.map(n => n.position.x || 0)) + 600, [initialNodes])
+  const maxY = useMemo(() => Math.max(1000, ...initialNodes.map(n => n.position.y || 0)) + 600, [initialNodes])
+  const translateExtent = useMemo<[[number, number], [number, number]]>(() => [[-400, -200], [maxX, maxY]], [maxX, maxY])
 
   return (
     <div className="flex flex-col h-screen w-full bg-[#0A0E1A] overflow-hidden">
@@ -260,22 +288,18 @@ function DiagramContent({
           onEdgesChange={onEdgesChange}
           onNodeClick={onNodeClick}
           nodeTypes={nodeTypes}
-          fitView
-          fitViewOptions={{ padding: 0.2 }}
-          minZoom={0.2}
-          maxZoom={1.5}
+          minZoom={1}
+          maxZoom={1}
+          panOnScroll={true}
+          zoomOnScroll={false}
+          zoomOnPinch={false}
+          zoomOnDoubleClick={false}
+          nodesDraggable={false}
+          panOnScrollMode={PanOnScrollMode.Free}
+          translateExtent={translateExtent}
         >
           <Background variant={BackgroundVariant.Dots} color="#1E3050" gap={24} size={1} />
-          <Controls className="!bg-[#1A1A1A] !border-[#3F3F46] !fill-orange" />
-          <MiniMap 
-            className="!bg-[#0D0D0D] !border !border-[#3F3F46] !rounded-lg hidden md:block"
-            nodeColor={(node) => {
-              if (node.data.status === 'done') return '#22C55E'
-              if (node.data.type === 'required') return '#FF6B00'
-              return '#3F3F46'
-            }}
-            maskColor="rgba(0,0,0,0.6)"
-          />
+
         </ReactFlow>
       </div>
 

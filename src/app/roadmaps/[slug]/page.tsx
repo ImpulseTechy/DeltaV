@@ -111,17 +111,25 @@ export default async function RoadmapSlugPage({ params }: { params: { slug: stri
     // Add Edges
     if (node.leadsTo && Array.isArray(node.leadsTo)) {
       node.leadsTo.forEach((targetId: string) => {
+        const targetNode = data.nodes.find((n: any) => n.id === targetId);
+        let sourceHandle = 'bottom';
+        let targetHandle = 'top';
+        
+        if (targetNode && targetNode.position.x > node.position.x) {
+          sourceHandle = 'right';
+          targetHandle = 'left';
+        }
+
         initialEdges.push({
           id: `e-${node.id}-${targetId}`,
           source: node.id,
           target: targetId,
-          type: 'smoothstep',
-          animated: false,
-          style: { stroke: '#3F3F46', strokeWidth: 1.5 },
-          markerEnd: {
-            type: MarkerType.ArrowClosed,
-            color: '#3F3F46',
-          }
+          sourceHandle,
+          targetHandle,
+          type: 'step',
+          animated: true,
+          style: { stroke: '#3B82F6', strokeWidth: 2.5, strokeDasharray: '6,6' },
+          zIndex: -1
         })
       })
     }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Handle, Position, NodeProps, Node } from '@xyflow/react'
+import { Check } from 'lucide-react'
 
 export type RoadmapNodeData = {
   label: string
@@ -27,21 +28,25 @@ export default function RoadmapNode({ data, selected }: NodeProps<Node<RoadmapNo
     )
   }
 
-  let baseClasses = 'relative rounded-lg px-4 py-2.5 font-body text-[14px] font-medium min-w-[160px] text-center cursor-pointer transition-all duration-200 '
+  let baseClasses = 'relative rounded-lg px-4 py-2.5 font-body text-[14px] font-medium w-[240px] text-center cursor-pointer transition-all duration-200 border-2 border-solid '
   
   if (data.type === 'required') {
-    baseClasses += 'bg-[#1A2540] border-[1.5px] border-solid text-white '
-    baseClasses += selected ? 'border-orange ' : 'border-orange '
+    baseClasses += 'bg-[#FFE500] text-black '
+    baseClasses += selected ? 'border-orange ' : 'border-black '
   } else if (data.type === 'recommended') {
-    baseClasses += 'bg-[#1A1A2E] border-[1.5px] border-dashed text-[#D0D0D0] '
-    baseClasses += selected ? 'border-orange border-solid ' : 'border-[#3F3F46] '
+    baseClasses += 'bg-[#FFF4B5] text-black '
+    baseClasses += selected ? 'border-orange ' : 'border-black '
   } else if (data.type === 'optional') {
-    baseClasses += 'bg-[#121212] border-[1.5px] border-dotted text-[#6B7280] '
-    baseClasses += selected ? 'border-orange border-solid ' : 'border-[#2A2A2A] '
+    baseClasses += 'bg-white text-black '
+    baseClasses += selected ? 'border-orange ' : 'border-black '
   }
 
   // Hover and active states
-  baseClasses += 'hover:scale-[1.02] hover:border-[#FF8C3A] hover:border-solid '
+  baseClasses += 'hover:scale-[1.02] hover:border-[#FF8C3A] hover:shadow-[0_4px_12px_rgba(255,107,0,0.3)] '
+
+  if (data.isDimmed) {
+    baseClasses += 'opacity-100 brightness-50 blur-[2px] grayscale '
+  }
 
   // Selection Glow
   if (selected) {
@@ -50,7 +55,7 @@ export default function RoadmapNode({ data, selected }: NodeProps<Node<RoadmapNo
 
   // Highlight (Search) Glow
   if (data.isHighlighted) {
-    baseClasses += 'shadow-[0_0_15px_rgba(255,107,0,0.6)] border-[#FF6B00] border-solid animate-pulse '
+    baseClasses += 'shadow-[0_0_15px_rgba(255,107,0,0.6)] border-[#FF6B00] animate-pulse '
   }
 
   // Dim (Filter) state
@@ -60,21 +65,25 @@ export default function RoadmapNode({ data, selected }: NodeProps<Node<RoadmapNo
 
   return (
     <>
-      <Handle type="target" position={Position.Top} className="opacity-0" />
+      <Handle type="target" position={Position.Top} id="top" className="opacity-0" />
+      <Handle type="target" position={Position.Left} id="left" className="opacity-0" />
       <div className={baseClasses}>
         
         {/* Status Indicator Dot */}
         {(data.status === 'in_progress' || data.status === 'done') && (
           <div 
-            className={`absolute left-[-4px] top-1/2 -translate-y-1/2 w-[8px] h-[8px] rounded-full shadow-[0_0_4px_rgba(0,0,0,0.5)] ${
-              data.status === 'done' ? 'bg-[#22C55E]' : 'bg-[#EAB308]'
+            className={`absolute -right-2 -top-2 flex items-center justify-center rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.2)] ${
+              data.status === 'done' ? 'bg-[#8B5CF6] w-5 h-5' : 'bg-[#EAB308] w-4 h-4'
             }`}
-          />
+          >
+            {data.status === 'done' && <Check className="w-3 h-3 text-white stroke-[3]" />}
+          </div>
         )}
         
         {data.label}
       </div>
-      <Handle type="source" position={Position.Bottom} className="opacity-0" />
+      <Handle type="source" position={Position.Bottom} id="bottom" className="opacity-0" />
+      <Handle type="source" position={Position.Right} id="right" className="opacity-0" />
     </>
   )
 }
