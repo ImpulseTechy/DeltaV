@@ -1,0 +1,2109 @@
+{
+  "id": "ece-core",
+  "title": "ECE Core Engineer",
+  "description": "Step-by-step path to becoming a core electronics engineer in India \u2014 from fundamentals to placement-ready.",
+  "studentCount": 0,
+  "totalNodes": 40,
+  "nodes": [
+    {
+      "id": "basic-electronics",
+      "label": "Basic Electronics",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 100,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Basic Electronics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Basic Electronics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Basic Electronics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Basic Electronics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Basic Electronics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "semiconductor-devices",
+        "digital-logic"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "semiconductor-devices",
+      "label": "Semiconductor Devices",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 400,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Semiconductor Devices.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Semiconductor Devices"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Semiconductor Devices Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Semiconductor Devices",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Semiconductor Devices in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "op-amps",
+        "bjt-mosfet"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "digital-logic",
+      "label": "Digital Logic",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 700,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Digital Logic.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Digital Logic"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Digital Logic Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Digital Logic",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Digital Logic in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "combinational-circuits",
+        "sequential-circuits"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "op-amps",
+      "label": "Op Amps",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 1000,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Op Amps.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Op Amps"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Op Amps Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Op Amps",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Op Amps in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "filters-oscillators"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "bjt-mosfet",
+      "label": "Bjt Mosfet",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 1300,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Bjt Mosfet.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Bjt Mosfet"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Bjt Mosfet Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Bjt Mosfet",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Bjt Mosfet in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "power-electronics-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "combinational-circuits",
+      "label": "Combinational Circuits",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 1600,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Combinational Circuits.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Combinational Circuits"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Combinational Circuits Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Combinational Circuits",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Combinational Circuits in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "sequential-circuits"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "sequential-circuits",
+      "label": "Sequential Circuits",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 1900,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Sequential Circuits.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Sequential Circuits"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Sequential Circuits Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Sequential Circuits",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Sequential Circuits in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "microcontrollers"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "microcontrollers",
+      "label": "Microcontrollers",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 100,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Microcontrollers.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Microcontrollers"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Microcontrollers Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Microcontrollers",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Microcontrollers in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "c-embedded",
+        "pcb-design",
+        "communication-protocols"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "c-embedded",
+      "label": "C Embedded",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 400,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of C Embedded.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on C Embedded"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "C Embedded Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to C Embedded",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for C Embedded in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "rtos-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "pcb-design",
+      "label": "Pcb Design",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 700,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Pcb Design.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Pcb Design"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Pcb Design Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Pcb Design",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Pcb Design in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "kicad-easyeda"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "communication-protocols",
+      "label": "Communication Protocols",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 1000,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Communication Protocols.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Communication Protocols"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Communication Protocols Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Communication Protocols",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Communication Protocols in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "uart-protocol",
+        "spi-protocol",
+        "i2c-protocol"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "uart-protocol",
+      "label": "Uart Protocol",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 1300,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Uart Protocol.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Uart Protocol"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Uart Protocol Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Uart Protocol",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Uart Protocol in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wireless-protocols"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "spi-protocol",
+      "label": "Spi Protocol",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 1600,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Spi Protocol.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Spi Protocol"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Spi Protocol Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Spi Protocol",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Spi Protocol in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wireless-protocols"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "i2c-protocol",
+      "label": "I2c Protocol",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 1900,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of I2c Protocol.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on I2c Protocol"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "I2c Protocol Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to I2c Protocol",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for I2c Protocol in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wireless-protocols"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "wireless-protocols",
+      "label": "Wireless Protocols",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 2200,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Wireless Protocols.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Wireless Protocols"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Wireless Protocols Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Wireless Protocols",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Wireless Protocols in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "iot-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "sensors-signal-conditioning",
+      "label": "Sensors Signal Conditioning",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 2500,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Sensors Signal Conditioning.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Sensors Signal Conditioning"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Sensors Signal Conditioning Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Sensors Signal Conditioning",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Sensors Signal Conditioning in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "adc-dac"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "adc-dac",
+      "label": "Adc Dac",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 2800,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Adc Dac.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Adc Dac"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Adc Dac Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Adc Dac",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Adc Dac in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "dsp-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "matlab-simulink",
+      "label": "Matlab Simulink",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 3100,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Matlab Simulink.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Matlab Simulink"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Matlab Simulink Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Matlab Simulink",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Matlab Simulink in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "dsp-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "kicad-easyeda",
+      "label": "Kicad Easyeda",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 3400,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Kicad Easyeda.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Kicad Easyeda"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Kicad Easyeda Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Kicad Easyeda",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Kicad Easyeda in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "schematic-design"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "rtos-basics",
+      "label": "Rtos Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 100,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Rtos Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Rtos Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Rtos Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Rtos Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Rtos Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "freertos-deepdive"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "iot-basics",
+      "label": "Iot Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 400,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Iot Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Iot Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Iot Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Iot Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Iot Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "mqtt-protocol",
+        "aws-iot"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "freertos-deepdive",
+      "label": "Freertos Deepdive",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 700,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Freertos Deepdive.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Freertos Deepdive"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Freertos Deepdive Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Freertos Deepdive",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Freertos Deepdive in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "linux-embedded"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "dsp-basics",
+      "label": "Dsp Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 1000,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Dsp Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Dsp Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Dsp Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Dsp Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Dsp Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "fpga-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "fpga-basics",
+      "label": "Fpga Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 1300,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Fpga Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Fpga Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Fpga Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Fpga Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Fpga Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "verilog-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "linux-embedded",
+      "label": "Linux Embedded",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 1600,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Linux Embedded.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Linux Embedded"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Linux Embedded Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Linux Embedded",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Linux Embedded in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "device-drivers"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "tinyml-edge-ai",
+      "label": "Tinyml Edge Ai",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 1900,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Tinyml Edge Ai.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Tinyml Edge Ai"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Tinyml Edge Ai Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Tinyml Edge Ai",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Tinyml Edge Ai in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "edge-impulse"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "power-electronics-basics",
+      "label": "Power Electronics Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 2200,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Power Electronics Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Power Electronics Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Power Electronics Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Power Electronics Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Power Electronics Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "motor-drives"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "core-ece-interview-prep",
+      "label": "Core Ece Interview Prep",
+      "type": "required",
+      "group": "placement",
+      "position": {
+        "x": 100,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Core Ece Interview Prep.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Core Ece Interview Prep"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Core Ece Interview Prep Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Core Ece Interview Prep",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Core Ece Interview Prep in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "resume-for-ece",
+      "label": "Resume For Ece",
+      "type": "required",
+      "group": "placement",
+      "position": {
+        "x": 400,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Resume For Ece.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Resume For Ece"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Resume For Ece Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Resume For Ece",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Resume For Ece in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "github-portfolio-hardware",
+      "label": "Github Portfolio Hardware",
+      "type": "recommended",
+      "group": "placement",
+      "position": {
+        "x": 700,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Github Portfolio Hardware.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Github Portfolio Hardware"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Github Portfolio Hardware Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Github Portfolio Hardware",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Github Portfolio Hardware in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "gate-ece-preparation",
+      "label": "Gate Ece Preparation",
+      "type": "recommended",
+      "group": "placement",
+      "position": {
+        "x": 1000,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Gate Ece Preparation.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Gate Ece Preparation"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Gate Ece Preparation Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Gate Ece Preparation",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Gate Ece Preparation in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "psu-vs-startup-vs-core",
+      "label": "Psu Vs Startup Vs Core",
+      "type": "optional",
+      "group": "placement",
+      "position": {
+        "x": 1300,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Psu Vs Startup Vs Core.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Psu Vs Startup Vs Core"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Psu Vs Startup Vs Core Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Psu Vs Startup Vs Core",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Psu Vs Startup Vs Core in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "filters-oscillators",
+      "label": "Filters Oscillators",
+      "type": "required",
+      "group": "foundation",
+      "position": {
+        "x": 1600,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Filters Oscillators.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Filters Oscillators"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Filters Oscillators Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Filters Oscillators",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Filters Oscillators in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "schematic-design",
+      "label": "Schematic Design",
+      "type": "required",
+      "group": "core",
+      "position": {
+        "x": 1900,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Schematic Design.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Schematic Design"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Schematic Design Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Schematic Design",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Schematic Design in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "mqtt-protocol",
+      "label": "Mqtt Protocol",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 2200,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Mqtt Protocol.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Mqtt Protocol"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Mqtt Protocol Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Mqtt Protocol",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Mqtt Protocol in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "aws-iot",
+      "label": "Aws Iot",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 2500,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Aws Iot.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Aws Iot"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Aws Iot Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Aws Iot",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Aws Iot in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "verilog-basics",
+      "label": "Verilog Basics",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 2800,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Verilog Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Verilog Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Verilog Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Verilog Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Verilog Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "device-drivers",
+      "label": "Device Drivers",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 3100,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Device Drivers.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Device Drivers"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Device Drivers Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Device Drivers",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Device Drivers in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "edge-impulse",
+      "label": "Edge Impulse",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 3400,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Edge Impulse.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Edge Impulse"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Edge Impulse Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Edge Impulse",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Edge Impulse in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "motor-drives",
+      "label": "Motor Drives",
+      "type": "required",
+      "group": "advanced",
+      "position": {
+        "x": 3700,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Motor Drives.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Motor Drives"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Motor Drives Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Motor Drives",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Motor Drives in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "basic-electronics",
+      "target": "semiconductor-devices",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e2",
+      "source": "basic-electronics",
+      "target": "digital-logic",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e3",
+      "source": "semiconductor-devices",
+      "target": "op-amps",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e4",
+      "source": "semiconductor-devices",
+      "target": "bjt-mosfet",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e5",
+      "source": "digital-logic",
+      "target": "combinational-circuits",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e6",
+      "source": "digital-logic",
+      "target": "sequential-circuits",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e7",
+      "source": "op-amps",
+      "target": "filters-oscillators",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e8",
+      "source": "bjt-mosfet",
+      "target": "power-electronics-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e9",
+      "source": "combinational-circuits",
+      "target": "sequential-circuits",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e10",
+      "source": "sequential-circuits",
+      "target": "microcontrollers",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e11",
+      "source": "microcontrollers",
+      "target": "c-embedded",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e12",
+      "source": "microcontrollers",
+      "target": "pcb-design",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e13",
+      "source": "microcontrollers",
+      "target": "communication-protocols",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e14",
+      "source": "c-embedded",
+      "target": "rtos-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e15",
+      "source": "pcb-design",
+      "target": "kicad-easyeda",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e16",
+      "source": "communication-protocols",
+      "target": "uart-protocol",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e17",
+      "source": "communication-protocols",
+      "target": "spi-protocol",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e18",
+      "source": "communication-protocols",
+      "target": "i2c-protocol",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e19",
+      "source": "uart-protocol",
+      "target": "wireless-protocols",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e20",
+      "source": "spi-protocol",
+      "target": "wireless-protocols",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e21",
+      "source": "i2c-protocol",
+      "target": "wireless-protocols",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e22",
+      "source": "wireless-protocols",
+      "target": "iot-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e23",
+      "source": "sensors-signal-conditioning",
+      "target": "adc-dac",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e24",
+      "source": "adc-dac",
+      "target": "dsp-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e25",
+      "source": "matlab-simulink",
+      "target": "dsp-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e26",
+      "source": "kicad-easyeda",
+      "target": "schematic-design",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e27",
+      "source": "rtos-basics",
+      "target": "freertos-deepdive",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e28",
+      "source": "iot-basics",
+      "target": "mqtt-protocol",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e29",
+      "source": "iot-basics",
+      "target": "aws-iot",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e30",
+      "source": "freertos-deepdive",
+      "target": "linux-embedded",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e31",
+      "source": "dsp-basics",
+      "target": "fpga-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e32",
+      "source": "fpga-basics",
+      "target": "verilog-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e33",
+      "source": "linux-embedded",
+      "target": "device-drivers",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e34",
+      "source": "tinyml-edge-ai",
+      "target": "edge-impulse",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e35",
+      "source": "power-electronics-basics",
+      "target": "motor-drives",
+      "type": "smoothstep"
+    }
+  ],
+  "groups": [
+    {
+      "id": "foundation",
+      "label": "Foundation",
+      "color": "#1A2540",
+      "yearRange": "Year 1-2"
+    },
+    {
+      "id": "core",
+      "label": "Core Skills",
+      "color": "#1A1A2E",
+      "yearRange": "Year 2-3"
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced",
+      "color": "#1A2020",
+      "yearRange": "Year 3-4"
+    },
+    {
+      "id": "placement",
+      "label": "Placement & Career",
+      "color": "#201A1A",
+      "yearRange": "Final Year"
+    }
+  ]
+}

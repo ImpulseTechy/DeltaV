@@ -1,0 +1,1392 @@
+{
+  "id": "eee-automation",
+  "title": "EEE Automation Engineer",
+  "description": "Power electronics, PLCs, and SCADA control.",
+  "studentCount": 0,
+  "totalNodes": 27,
+  "nodes": [
+    {
+      "id": "electrical-machines",
+      "label": "Electrical Machines",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 100,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Electrical Machines.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Electrical Machines"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Electrical Machines Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Electrical Machines",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Electrical Machines in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "transformers"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "transformers",
+      "label": "Transformers",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 400,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Transformers.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Transformers"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Transformers Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Transformers",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Transformers in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "power-systems"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "power-systems",
+      "label": "Power Systems",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 700,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Power Systems.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Power Systems"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Power Systems Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Power Systems",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Power Systems in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "power-electronics",
+      "label": "Power Electronics",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 1000,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Power Electronics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Power Electronics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Power Electronics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Power Electronics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Power Electronics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "rectifiers"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "rectifiers",
+      "label": "Rectifiers",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 1300,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Rectifiers.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Rectifiers"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Rectifiers Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Rectifiers",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Rectifiers in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "inverters"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "inverters",
+      "label": "Inverters",
+      "type": "required",
+      "group": "power-fundamentals",
+      "position": {
+        "x": 1600,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Inverters.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Inverters"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Inverters Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Inverters",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Inverters in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "vfd-basics"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "vfd-basics",
+      "label": "Vfd Basics",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 100,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Vfd Basics.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Vfd Basics"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Vfd Basics Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Vfd Basics",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Vfd Basics in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "motor-control",
+        "vfd-advanced"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "motor-control",
+      "label": "Motor Control",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 400,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Motor Control.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Motor Control"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Motor Control Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Motor Control",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Motor Control in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "vfd-advanced",
+      "label": "Vfd Advanced",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 700,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Vfd Advanced.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Vfd Advanced"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Vfd Advanced Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Vfd Advanced",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Vfd Advanced in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "plc-fundamentals",
+      "label": "Plc Fundamentals",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 1000,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Plc Fundamentals.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Plc Fundamentals"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Plc Fundamentals Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Plc Fundamentals",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Plc Fundamentals in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "ladder-logic"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "ladder-logic",
+      "label": "Ladder Logic",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 1300,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Ladder Logic.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Ladder Logic"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Ladder Logic Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Ladder Logic",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Ladder Logic in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "siemens-tia-portal"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "siemens-tia-portal",
+      "label": "Siemens Tia Portal",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 1600,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Siemens Tia Portal.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Siemens Tia Portal"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Siemens Tia Portal Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Siemens Tia Portal",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Siemens Tia Portal in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "function-blocks"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "function-blocks",
+      "label": "Function Blocks",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 1900,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Function Blocks.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Function Blocks"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Function Blocks Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Function Blocks",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Function Blocks in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "hmi-design"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "hmi-design",
+      "label": "Hmi Design",
+      "type": "required",
+      "group": "industrial-automation",
+      "position": {
+        "x": 2200,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Hmi Design.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Hmi Design"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Hmi Design Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Hmi Design",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Hmi Design in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "drives-servo-systems",
+      "label": "Drives Servo Systems",
+      "type": "recommended",
+      "group": "industrial-automation",
+      "position": {
+        "x": 2500,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Drives Servo Systems.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Drives Servo Systems"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Drives Servo Systems Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Drives Servo Systems",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Drives Servo Systems in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "scada-systems",
+      "label": "Scada Systems",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 100,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Scada Systems.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Scada Systems"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Scada Systems Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Scada Systems",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Scada Systems in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wonderware-ignition"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "wonderware-ignition",
+      "label": "Wonderware Ignition",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 400,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Wonderware Ignition.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Wonderware Ignition"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Wonderware Ignition Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Wonderware Ignition",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Wonderware Ignition in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "industrial-protocols",
+      "label": "Industrial Protocols",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 700,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Industrial Protocols.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Industrial Protocols"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Industrial Protocols Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Industrial Protocols",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Industrial Protocols in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "modbus"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "modbus",
+      "label": "Modbus",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 1000,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Modbus.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Modbus"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Modbus Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Modbus",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Modbus in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "profibus",
+        "profinet"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "profibus",
+      "label": "Profibus",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 1300,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Profibus.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Profibus"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Profibus Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Profibus",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Profibus in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "profinet",
+      "label": "Profinet",
+      "type": "required",
+      "group": "scada-iot",
+      "position": {
+        "x": 1600,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Profinet.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Profinet"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Profinet Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Profinet",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Profinet in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "industry-40-iiot",
+      "label": "Industry 40 Iiot",
+      "type": "recommended",
+      "group": "advanced",
+      "position": {
+        "x": 100,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Industry 40 Iiot.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Industry 40 Iiot"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Industry 40 Iiot Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Industry 40 Iiot",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Industry 40 Iiot in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "opc-ua"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "opc-ua",
+      "label": "Opc Ua",
+      "type": "optional",
+      "group": "advanced",
+      "position": {
+        "x": 400,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Opc Ua.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Opc Ua"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Opc Ua Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Opc Ua",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Opc Ua in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "energy-management",
+      "label": "Energy Management",
+      "type": "optional",
+      "group": "advanced",
+      "position": {
+        "x": 700,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Energy Management.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Energy Management"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Energy Management Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Energy Management",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Energy Management in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "power-quality",
+      "label": "Power Quality",
+      "type": "recommended",
+      "group": "advanced",
+      "position": {
+        "x": 1000,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Power Quality.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Power Quality"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Power Quality Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Power Quality",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Power Quality in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "gate-ee-preparation",
+      "label": "Gate Ee Preparation",
+      "type": "required",
+      "group": "career",
+      "position": {
+        "x": 100,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Gate Ee Preparation.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Gate Ee Preparation"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Gate Ee Preparation Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Gate Ee Preparation",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Gate Ee Preparation in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "interview-prep-eee"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "interview-prep-eee",
+      "label": "Interview Prep Eee",
+      "type": "required",
+      "group": "career",
+      "position": {
+        "x": 400,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Interview Prep Eee.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Interview Prep Eee"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Interview Prep Eee Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Interview Prep Eee",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Interview Prep Eee in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "electrical-machines",
+      "target": "transformers",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e2",
+      "source": "transformers",
+      "target": "power-systems",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e3",
+      "source": "power-electronics",
+      "target": "rectifiers",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e4",
+      "source": "rectifiers",
+      "target": "inverters",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e5",
+      "source": "inverters",
+      "target": "vfd-basics",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e6",
+      "source": "vfd-basics",
+      "target": "motor-control",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e7",
+      "source": "vfd-basics",
+      "target": "vfd-advanced",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e8",
+      "source": "plc-fundamentals",
+      "target": "ladder-logic",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e9",
+      "source": "ladder-logic",
+      "target": "siemens-tia-portal",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e10",
+      "source": "siemens-tia-portal",
+      "target": "function-blocks",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e11",
+      "source": "function-blocks",
+      "target": "hmi-design",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e12",
+      "source": "scada-systems",
+      "target": "wonderware-ignition",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e13",
+      "source": "industrial-protocols",
+      "target": "modbus",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e14",
+      "source": "modbus",
+      "target": "profibus",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e15",
+      "source": "modbus",
+      "target": "profinet",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e16",
+      "source": "industry-40-iiot",
+      "target": "opc-ua",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e17",
+      "source": "gate-ee-preparation",
+      "target": "interview-prep-eee",
+      "type": "smoothstep"
+    }
+  ],
+  "groups": [
+    {
+      "id": "power-fundamentals",
+      "label": "Power Fundamentals",
+      "color": "#1A2540",
+      "yearRange": "Year 1-2"
+    },
+    {
+      "id": "industrial-automation",
+      "label": "Industrial Automation",
+      "color": "#1A1A2E",
+      "yearRange": "Year 2-3"
+    },
+    {
+      "id": "scada-iot",
+      "label": "SCADA & IoT",
+      "color": "#1A2020",
+      "yearRange": "Year 3"
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced Topics",
+      "color": "#20201A",
+      "yearRange": "Year 4"
+    },
+    {
+      "id": "career",
+      "label": "Career",
+      "color": "#201A1A",
+      "yearRange": "Final Year"
+    }
+  ]
+}

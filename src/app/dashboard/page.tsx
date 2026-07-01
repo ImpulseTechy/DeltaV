@@ -1,16 +1,44 @@
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Cpu, Wifi, Settings } from 'lucide-react'
+import GuestSync from '@/components/roadmaps/GuestSync'
 
 export const metadata = {
   title: 'Dashboard | Delta V',
 }
 
 export default async function DashboardPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   // MOCK DATA FOR UI TESTING
-  const session = { user: { id: 'mock' } }
+  const { data: { user } } = await supabase.auth.getUser()
   const firstName = 'Yogesh'
+
+  let roadmapStats: any[] = []
+  if (user) {
+    const { data: progressData } = await supabase
+      .from('roadmap_progress')
+      .select('roadmap_slug, status')
+      .eq('user_id', user.id)
+
+    if (progressData) {
+      const grouped = progressData.reduce((acc: any, row: any) => {
+        if (!acc[row.roadmap_slug]) {
+          acc[row.roadmap_slug] = { roadmap_slug: row.roadmap_slug, total: 52, completed: 0 } // Assuming 52 for core, etc.
+        }
+        if (row.status === 'done') {
+          acc[row.roadmap_slug].completed += 1
+        }
+        return acc
+      }, {})
+      
+      // Fix totals based on real JSON files
+      if (grouped['ece-core']) grouped['ece-core'].total = 52
+      if (grouped['embedded-iot']) grouped['embedded-iot'].total = 38
+      if (grouped['eee-automation']) grouped['eee-automation'].total = 41
+
+      roadmapStats = Object.values(grouped)
+    }
+  }
 
   const enrollments = [
     {
@@ -152,6 +180,65 @@ export default async function DashboardPage() {
           </div>
         </div>
       )}
+
+      {/* Section 4 - My Roadmaps */}
+      <div>
+        <h2 className="font-mono text-orange text-sm mb-4 tracking-widest uppercase">MY ROADMAPS</h2>
+        
+        {roadmapStats && roadmapStats.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {roadmapStats.map(stat => {
+              const pct = stat.total > 0 ? Math.round((stat.completed / stat.total) * 100) : 0
+              let Icon = Cpu
+              let displayTitle = stat.roadmap_slug
+              if (stat.roadmap_slug === 'ece-core') { displayTitle = 'ECE Core Engineer'; Icon = Cpu }
+              if (stat.roadmap_slug === 'embedded-iot') { displayTitle = 'Embedded Systems & IoT'; Icon = Wifi }
+              if (stat.roadmap_slug === 'eee-automation') { displayTitle = 'Industrial Automation'; Icon = Settings }
+              
+              return (
+                <div key={stat.roadmap_slug} className="bg-[#1A1A1A] border border-[#3F3F46] rounded-lg p-5 flex flex-col">
+                  <div className="flex items-center gap-3 mb-5">
+                    <Icon className="w-6 h-6 text-orange" />
+                    <h3 className="font-display font-semibold text-white text-[1.2rem] leading-tight">
+                      {displayTitle}
+                    </h3>
+                  </div>
+                  
+                  <div className="mt-auto">
+                    <div className="w-full h-1.5 bg-[#242424] rounded-full overflow-hidden mb-2">
+                      <div className="h-full bg-orange transition-all duration-500" style={{ width: `${pct}%` }} />
+                    </div>
+                    
+                    <div className="flex justify-between items-center mb-4">
+                      <span className="font-mono text-[12px] text-[#52525B]">{stat.completed} / {stat.total} topics completed</span>
+                      <span className="font-mono text-[12px] text-orange">{pct}% done</span>
+                    </div>
+                    
+                    <Link 
+                      href={`/roadmaps/${stat.roadmap_slug}`}
+                      className="w-full inline-flex items-center justify-center font-body text-[14px] text-white hover:text-orange hover:bg-[#242424] bg-[#121212] border border-[#3F3F46] transition-colors py-2 rounded-md"
+                    >
+                      Continue Roadmap →
+                    </Link>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        ) : (
+          <div className="bg-[#1A1A1A] border border-[#3F3F46] rounded-lg p-6 flex flex-col items-center text-center">
+            <p className="font-body text-[#A1A1AA] text-[15px] mb-4">You haven't started a roadmap yet.</p>
+            <Link 
+              href="/roadmaps"
+              className="inline-flex items-center justify-center font-body text-[14px] text-white hover:text-orange hover:bg-[#242424] bg-[#121212] border border-[#3F3F46] transition-colors py-2 px-6 rounded-md"
+            >
+              Explore Roadmaps →
+            </Link>
+          </div>
+        )}
+      </div>
+
+      <GuestSync />
     </div>
   )
 }

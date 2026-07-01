@@ -1,0 +1,1250 @@
+{
+  "id": "embedded-iot",
+  "title": "Embedded & IoT Engineer",
+  "description": "Master microcontrollers, RTOS, and Cloud IoT.",
+  "studentCount": 0,
+  "totalNodes": 24,
+  "nodes": [
+    {
+      "id": "c-programming-embedded",
+      "label": "C Programming Embedded",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 100,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of C Programming Embedded.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on C Programming Embedded"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "C Programming Embedded Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to C Programming Embedded",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for C Programming Embedded in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "pointers-memory"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "pointers-memory",
+      "label": "Pointers Memory",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 400,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Pointers Memory.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Pointers Memory"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Pointers Memory Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Pointers Memory",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Pointers Memory in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "rtos-concepts"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "rtos-concepts",
+      "label": "Rtos Concepts",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 700,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Rtos Concepts.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Rtos Concepts"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Rtos Concepts Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Rtos Concepts",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Rtos Concepts in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "freertos"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "freertos",
+      "label": "Freertos",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 1000,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Freertos.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Freertos"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Freertos Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Freertos",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Freertos in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "microcontroller-architecture",
+      "label": "Microcontroller Architecture",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 1300,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Microcontroller Architecture.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Microcontroller Architecture"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Microcontroller Architecture Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Microcontroller Architecture",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Microcontroller Architecture in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "gpio-interrupts"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "gpio-interrupts",
+      "label": "Gpio Interrupts",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 1600,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Gpio Interrupts.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Gpio Interrupts"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Gpio Interrupts Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Gpio Interrupts",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Gpio Interrupts in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "timers-pwm"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "timers-pwm",
+      "label": "Timers Pwm",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 1900,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Timers Pwm.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Timers Pwm"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Timers Pwm Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Timers Pwm",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Timers Pwm in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "adc-dac-embedded"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "adc-dac-embedded",
+      "label": "Adc Dac Embedded",
+      "type": "required",
+      "group": "fundamentals",
+      "position": {
+        "x": 2200,
+        "y": 50
+      },
+      "description": "Learn the core concepts and applications of Adc Dac Embedded.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Adc Dac Embedded"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Adc Dac Embedded Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Adc Dac Embedded",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Adc Dac Embedded in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "uart-spi-i2c",
+      "label": "Uart Spi I2c",
+      "type": "required",
+      "group": "firmware",
+      "position": {
+        "x": 100,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Uart Spi I2c.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Uart Spi I2c"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Uart Spi I2c Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Uart Spi I2c",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Uart Spi I2c in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "esp32-platform"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "esp32-platform",
+      "label": "Esp32 Platform",
+      "type": "required",
+      "group": "firmware",
+      "position": {
+        "x": 400,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Esp32 Platform.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Esp32 Platform"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Esp32 Platform Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Esp32 Platform",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Esp32 Platform in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wifi-provisioning"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "wifi-provisioning",
+      "label": "Wifi Provisioning",
+      "type": "required",
+      "group": "firmware",
+      "position": {
+        "x": 700,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Wifi Provisioning.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Wifi Provisioning"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Wifi Provisioning Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Wifi Provisioning",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Wifi Provisioning in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "mqtt-iot"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "ble-bluetooth",
+      "label": "Ble Bluetooth",
+      "type": "required",
+      "group": "firmware",
+      "position": {
+        "x": 1000,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Ble Bluetooth.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Ble Bluetooth"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Ble Bluetooth Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Ble Bluetooth",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Ble Bluetooth in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "wifi-provisioning"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "ota-firmware-updates",
+      "label": "Ota Firmware Updates",
+      "type": "recommended",
+      "group": "firmware",
+      "position": {
+        "x": 1300,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Ota Firmware Updates.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Ota Firmware Updates"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Ota Firmware Updates Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Ota Firmware Updates",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Ota Firmware Updates in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "linux-embedded-systems",
+      "label": "Linux Embedded Systems",
+      "type": "recommended",
+      "group": "firmware",
+      "position": {
+        "x": 1600,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Linux Embedded Systems.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Linux Embedded Systems"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Linux Embedded Systems Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Linux Embedded Systems",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Linux Embedded Systems in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "device-drivers-linux"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "device-drivers-linux",
+      "label": "Device Drivers Linux",
+      "type": "optional",
+      "group": "firmware",
+      "position": {
+        "x": 1900,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Device Drivers Linux.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Device Drivers Linux"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Device Drivers Linux Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Device Drivers Linux",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Device Drivers Linux in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "embedded-security",
+      "label": "Embedded Security",
+      "type": "optional",
+      "group": "firmware",
+      "position": {
+        "x": 2200,
+        "y": 250
+      },
+      "description": "Learn the core concepts and applications of Embedded Security.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Embedded Security"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Embedded Security Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Embedded Security",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Embedded Security in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "mqtt-iot",
+      "label": "Mqtt Iot",
+      "type": "required",
+      "group": "connectivity",
+      "position": {
+        "x": 100,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Mqtt Iot.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Mqtt Iot"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Mqtt Iot Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Mqtt Iot",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Mqtt Iot in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "aws-iot-core",
+        "node-red"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "aws-iot-core",
+      "label": "Aws Iot Core",
+      "type": "required",
+      "group": "connectivity",
+      "position": {
+        "x": 400,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Aws Iot Core.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Aws Iot Core"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Aws Iot Core Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Aws Iot Core",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Aws Iot Core in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "cloud-dashboard"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "node-red",
+      "label": "Node Red",
+      "type": "required",
+      "group": "connectivity",
+      "position": {
+        "x": 700,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Node Red.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Node Red"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Node Red Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Node Red",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Node Red in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "cloud-dashboard",
+      "label": "Cloud Dashboard",
+      "type": "required",
+      "group": "connectivity",
+      "position": {
+        "x": 1000,
+        "y": 450
+      },
+      "description": "Learn the core concepts and applications of Cloud Dashboard.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Cloud Dashboard"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Cloud Dashboard Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Cloud Dashboard",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Cloud Dashboard in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "tinyml-tensorflow-lite",
+      "label": "Tinyml Tensorflow Lite",
+      "type": "recommended",
+      "group": "cloud-ai",
+      "position": {
+        "x": 100,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Tinyml Tensorflow Lite.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Tinyml Tensorflow Lite"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Tinyml Tensorflow Lite Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Tinyml Tensorflow Lite",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Tinyml Tensorflow Lite in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "edge-impulse-platform"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "edge-impulse-platform",
+      "label": "Edge Impulse Platform",
+      "type": "optional",
+      "group": "cloud-ai",
+      "position": {
+        "x": 400,
+        "y": 650
+      },
+      "description": "Learn the core concepts and applications of Edge Impulse Platform.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Edge Impulse Platform"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Edge Impulse Platform Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Edge Impulse Platform",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Edge Impulse Platform in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "interview-prep-embedded",
+      "label": "Interview Prep Embedded",
+      "type": "required",
+      "group": "career",
+      "position": {
+        "x": 100,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Interview Prep Embedded.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Interview Prep Embedded"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Interview Prep Embedded Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Interview Prep Embedded",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Interview Prep Embedded in simulation.",
+      "prerequisites": [],
+      "leadsTo": [
+        "portfolio-embedded-projects"
+      ],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    },
+    {
+      "id": "portfolio-embedded-projects",
+      "label": "Portfolio Embedded Projects",
+      "type": "required",
+      "group": "career",
+      "position": {
+        "x": 400,
+        "y": 850
+      },
+      "description": "Learn the core concepts and applications of Portfolio Embedded Projects.",
+      "indiaContext": {
+        "gateRelevant": true,
+        "gateWeightage": "Varies",
+        "companiesTestThis": [
+          "General Electric",
+          "Siemens",
+          "TCS",
+          "L&T"
+        ],
+        "bestFreeResource": "NPTEL course on Portfolio Embedded Projects"
+      },
+      "resources": [
+        {
+          "type": "video",
+          "title": "Portfolio Embedded Projects Basics",
+          "source": "YouTube",
+          "url": "https://youtube.com",
+          "duration": "4 hrs"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Portfolio Embedded Projects",
+          "source": "Engineering Docs",
+          "url": "https://example.com",
+          "duration": "2 hrs"
+        }
+      ],
+      "projectIdea": "Implement a basic model for Portfolio Embedded Projects in simulation.",
+      "prerequisites": [],
+      "leadsTo": [],
+      "placementRelevance": [
+        "core",
+        "general"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "c-programming-embedded",
+      "target": "pointers-memory",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e2",
+      "source": "pointers-memory",
+      "target": "rtos-concepts",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e3",
+      "source": "rtos-concepts",
+      "target": "freertos",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e4",
+      "source": "microcontroller-architecture",
+      "target": "gpio-interrupts",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e5",
+      "source": "gpio-interrupts",
+      "target": "timers-pwm",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e6",
+      "source": "timers-pwm",
+      "target": "adc-dac-embedded",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e7",
+      "source": "uart-spi-i2c",
+      "target": "esp32-platform",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e8",
+      "source": "esp32-platform",
+      "target": "wifi-provisioning",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e9",
+      "source": "wifi-provisioning",
+      "target": "mqtt-iot",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e10",
+      "source": "ble-bluetooth",
+      "target": "wifi-provisioning",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e11",
+      "source": "linux-embedded-systems",
+      "target": "device-drivers-linux",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e12",
+      "source": "mqtt-iot",
+      "target": "aws-iot-core",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e13",
+      "source": "mqtt-iot",
+      "target": "node-red",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e14",
+      "source": "aws-iot-core",
+      "target": "cloud-dashboard",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e15",
+      "source": "tinyml-tensorflow-lite",
+      "target": "edge-impulse-platform",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e16",
+      "source": "interview-prep-embedded",
+      "target": "portfolio-embedded-projects",
+      "type": "smoothstep"
+    }
+  ],
+  "groups": [
+    {
+      "id": "fundamentals",
+      "label": "Fundamentals",
+      "color": "#1A2540",
+      "yearRange": "Year 1-2"
+    },
+    {
+      "id": "firmware",
+      "label": "Firmware",
+      "color": "#1A1A2E",
+      "yearRange": "Year 2-3"
+    },
+    {
+      "id": "connectivity",
+      "label": "Connectivity",
+      "color": "#1A2020",
+      "yearRange": "Year 3"
+    },
+    {
+      "id": "cloud-ai",
+      "label": "Cloud & AI",
+      "color": "#20201A",
+      "yearRange": "Year 4"
+    },
+    {
+      "id": "career",
+      "label": "Career",
+      "color": "#201A1A",
+      "yearRange": "Final Year"
+    }
+  ]
+}

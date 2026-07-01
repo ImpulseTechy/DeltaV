@@ -332,3 +332,55 @@ values
 ('rtos-august-2026', 'embedded-systems-rtos', '2026-08-04', '2026-09-29', 2499),
 ('plc-august-2026', 'plc-industrial-automation', '2026-08-18', '2026-09-22', 1999)
 on conflict (id) do nothing;
+
+---------------------------------------------------------
+-- 10. ROADMAPS TABLES
+---------------------------------------------------------
+create table public.roadmap_progress (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid references public.profiles(id) on delete cascade not null,
+  roadmap_slug text not null,
+  node_id text not null,
+  status text default 'pending' check (status in ('pending','in_progress','done')),
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  unique(user_id, roadmap_slug, node_id)
+);
+
+create table public.roadmap_suggestions (
+  id uuid default gen_random_uuid() primary key,
+  branch_name text not null,
+  email text not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- Enable RLS for roadmaps tables
+alter table public.roadmap_progress enable row level security;
+alter table public.roadmap_suggestions enable row level security;
+
+-- Roadmap Progress Policies
+create policy "Users manage own progress" 
+  on public.roadmap_progress for all 
+  using (auth.uid() = user_id);
+
+create policy "Service role full access on progress" 
+  on public.roadmap_progress for all 
+  using (
+        exists (
+            select 1 from public.profiles 
+            where profiles.id = auth.uid() and profiles.role = 'admin'
+        )
+    );
+
+-- Roadmap Suggestions Policies
+create policy "Allow public inserts for suggestions" 
+  on public.roadmap_suggestions for insert 
+  with check (true);
+
+create policy "Admins read suggestions" 
+  on public.roadmap_suggestions for select 
+  using (
+        exists (
+            select 1 from public.profiles 
+            where profiles.id = auth.uid() and profiles.role = 'admin'
+        )
+    );

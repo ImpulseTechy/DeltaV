@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://deltav.in
+
+# Sitemaps
+Sitemap: https://deltav.in/sitemap.xml

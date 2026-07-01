@@ -152,7 +152,7 @@ export default function Footer() {
             </h4>
             <div className="flex items-center gap-4 text-text-secondary mb-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/deltav_club/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange transition-colors"
@@ -161,7 +161,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/126704104"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange transition-colors"
@@ -170,7 +170,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@DeltaV_labs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange transition-colors"
