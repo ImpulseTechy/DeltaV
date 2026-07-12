@@ -1,0 +1,22 @@
+{
+  "id": "iot-engineer",
+  "title": "IoT Engineer",
+  "description": "Learn to connect embedded systems to the cloud, forming the backbone of the Internet of Things.",
+  "skills": [
+    "basic-electronics",
+    "c-programming",
+    "embedded-systems",
+    "esp32",
+    "wifi",
+    "mqtt",
+    "aws-iot"
+  ],
+  "connections": [
+    { "source": "basic-electronics", "target": "embedded-systems" },
+    { "source": "c-programming", "target": "embedded-systems" },
+    { "source": "embedded-systems", "target": "esp32" },
+    { "source": "esp32", "target": "wifi" },
+    { "source": "wifi", "target": "mqtt" },
+    { "source": "mqtt", "target": "aws-iot" }
+  ]
+}

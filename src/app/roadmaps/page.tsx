@@ -65,41 +65,22 @@ export default async function RoadmapsPage() {
   // 1. Get current user
   const { data: { user } } = await supabase.auth.getUser()
 
-  // 2. Fetch student counts for live roadmaps (using admin client to bypass RLS or just a simple query if public)
-  // For simplicity we will query with the current user's token. 
-  // Wait, RLS on roadmap_progress only allows users to see their own.
-  // We need the service_role key to count all users. We will do this inline here.
-  const { createClient: createAdminClient } = await import('@supabase/supabase-js')
-  const adminUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder-url.supabase.co'
-  const adminKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key'
-  const adminSupabase = createAdminClient(adminUrl, adminKey)
-
-  const studentCounts: Record<string, number> = {}
-  
-  // To avoid hitting rate limits or complex queries, we loop over the 3 live roadmaps.
-  for (const r of liveRoadmaps) {
-    const { count } = await adminSupabase
-      .from('roadmap_progress')
-      .select('*', { count: 'exact', head: true })
-      .eq('roadmap_slug', r.id)
-    
-    // Fallback logic: if count is 0 or null, we just show 0 or a base number.
-    // The prompt says we can hardcode some stats or fetch from db.
-    studentCounts[r.id] = count || 0
-  }
+  // 2. Student counts are fetched below using getStudentCount
 
   // 3. Fetch user progress if logged in
   const userProgress: Record<string, number> = {}
   if (user) {
-    for (const r of liveRoadmaps) {
-      const { count } = await supabase
-        .from('roadmap_progress')
-        .select('*', { count: 'exact', head: true })
-        .eq('user_id', user.id)
-        .eq('roadmap_slug', r.id)
-        .eq('status', 'done')
-      userProgress[r.id] = count || 0
-    }
+    await Promise.all(
+      liveRoadmaps.map(async (r) => {
+        const { count } = await supabase
+          .from('roadmap_progress')
+          .select('*', { count: 'exact', head: true })
+          .eq('user_id', user.id)
+          .eq('roadmap_slug', r.id)
+          .eq('status', 'done')
+        userProgress[r.id] = count || 0
+      })
+    )
   }
 
   const { getStudentCount } = await import('@/lib/roadmaps/getStudentCount')

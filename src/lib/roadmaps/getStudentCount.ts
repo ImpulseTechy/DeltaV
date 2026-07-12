@@ -4,6 +4,11 @@ import { unstable_cache } from 'next/cache'
 async function fetchStudentCount(slug: string): Promise<number> {
   const adminUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co'
   const adminKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder'
+  
+  if (adminUrl === 'https://placeholder.supabase.co' || adminUrl.includes('placeholder')) {
+    return 0
+  }
+
   const adminSupabase = createClient(adminUrl, adminKey)
 
   const { count } = await adminSupabase
