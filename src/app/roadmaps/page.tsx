@@ -16,20 +16,6 @@ export const dynamic = 'force-dynamic'
 
 const liveRoadmaps = [
   {
-    id: 'ece-core',
-    icon: Cpu,
-    title: 'ECE Core Engineer',
-    description: 'From basic electronics to embedded systems, PCB design, and placement prep. The complete path for core ECE roles.',
-    totalNodes: 9
-  },
-  {
-    id: 'embedded-iot',
-    icon: Wifi,
-    title: 'Embedded Systems & IoT',
-    description: 'ESP32, RTOS, communication protocols, cloud IoT, TinyML. Everything to become an embedded systems engineer.',
-    totalNodes: 48
-  },
-  {
     id: 'eee-automation',
     icon: Settings,
     title: 'EEE Industrial Automation',

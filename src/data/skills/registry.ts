@@ -10336,6 +10336,2494 @@ export const skillsRegistry: Record<string, Skill> = {
           "nvidia-jetson"
       ]
   },
+  'basic-electrical-engineering': {
+      id: "basic-electrical-engineering",
+      title: "Basic Electrical Engineering",
+      icon: "cpu",
+      description: "Master the concepts and practical applications of Basic Electrical Engineering in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "6 hours",
+      whyLearnThis: "Basic Electrical Engineering is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Basic Electrical Engineering",
+          "Implement Basic Electrical Engineering in real-world scenarios",
+          "Troubleshoot Basic Electrical Engineering systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-basic-electrical-engineering",
+                  title: "Basic Electrical Engineering Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Basic Electrical Engineering.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-basic-electrical-engineering",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "basic-electrical-engineering"
+      ]
+  },
+  'electrical-safety': {
+      id: "electrical-safety",
+      title: "Electrical Safety",
+      icon: "cloud",
+      description: "Master the concepts and practical applications of Electrical Safety in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Electrical Safety is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Electrical Safety",
+          "Implement Electrical Safety in real-world scenarios",
+          "Troubleshoot Electrical Safety systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-electrical-safety",
+                  title: "Electrical Safety Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Electrical Safety.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-electrical-safety",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "electrical-safety"
+      ],
+      prerequisites: [
+          "basic-electrical-engineering"
+      ]
+  },
+  'electrical-measurements': {
+      id: "electrical-measurements",
+      title: "Electrical Measurements",
+      icon: "zap",
+      description: "Master the concepts and practical applications of Electrical Measurements in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "9 hours",
+      whyLearnThis: "Electrical Measurements is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Electrical Measurements",
+          "Implement Electrical Measurements in real-world scenarios",
+          "Troubleshoot Electrical Measurements systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-electrical-measurements",
+                  title: "Electrical Measurements Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Electrical Measurements.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-electrical-measurements",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "electrical-measurements"
+      ],
+      prerequisites: [
+          "electrical-safety"
+      ]
+  },
+  'circuit-theory': {
+      id: "circuit-theory",
+      title: "Circuit Theory",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of Circuit Theory in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "8 hours",
+      whyLearnThis: "Circuit Theory is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Circuit Theory",
+          "Implement Circuit Theory in real-world scenarios",
+          "Troubleshoot Circuit Theory systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-circuit-theory",
+                  title: "Circuit Theory Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Circuit Theory.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-circuit-theory",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "circuit-theory"
+      ],
+      prerequisites: [
+          "electrical-measurements"
+      ]
+  },
+  'control-systems-basics': {
+      id: "control-systems-basics",
+      title: "Control Systems Basics",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Control Systems Basics in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "8 hours",
+      whyLearnThis: "Control Systems Basics is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Control Systems Basics",
+          "Implement Control Systems Basics in real-world scenarios",
+          "Troubleshoot Control Systems Basics systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-control-systems-basics",
+                  title: "Control Systems Basics Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Control Systems Basics.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-control-systems-basics",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "control-systems-basics"
+      ],
+      prerequisites: [
+          "circuit-theory"
+      ]
+  },
+  'ac-dc-machines': {
+      id: "ac-dc-machines",
+      title: "AC & DC Machines",
+      icon: "microchip",
+      description: "Master the concepts and practical applications of AC & DC Machines in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "6 hours",
+      whyLearnThis: "AC & DC Machines is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of AC & DC Machines",
+          "Implement AC & DC Machines in real-world scenarios",
+          "Troubleshoot AC & DC Machines systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-ac-dc-machines",
+                  title: "AC & DC Machines Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to AC & DC Machines.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-ac-dc-machines",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "ac-dc-machines"
+      ],
+      prerequisites: [
+          "control-systems-basics"
+      ]
+  },
+  'transformers': {
+      id: "transformers",
+      title: "Transformers",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Transformers in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "10 hours",
+      whyLearnThis: "Transformers is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Transformers",
+          "Implement Transformers in real-world scenarios",
+          "Troubleshoot Transformers systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-transformers",
+                  title: "Transformers Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Transformers.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-transformers",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "transformers"
+      ],
+      prerequisites: [
+          "ac-dc-machines"
+      ]
+  },
+  'power-systems-basics': {
+      id: "power-systems-basics",
+      title: "Power Systems Basics",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Power Systems Basics in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "4 hours",
+      whyLearnThis: "Power Systems Basics is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Power Systems Basics",
+          "Implement Power Systems Basics in real-world scenarios",
+          "Troubleshoot Power Systems Basics systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-power-systems-basics",
+                  title: "Power Systems Basics Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Power Systems Basics.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-power-systems-basics",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "power-systems-basics"
+      ],
+      prerequisites: [
+          "transformers"
+      ]
+  },
+  'three-phase-systems': {
+      id: "three-phase-systems",
+      title: "Three Phase Systems",
+      icon: "wifi",
+      description: "Master the concepts and practical applications of Three Phase Systems in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "4 hours",
+      whyLearnThis: "Three Phase Systems is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Three Phase Systems",
+          "Implement Three Phase Systems in real-world scenarios",
+          "Troubleshoot Three Phase Systems systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-three-phase-systems",
+                  title: "Three Phase Systems Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Three Phase Systems.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-three-phase-systems",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "three-phase-systems"
+      ],
+      prerequisites: [
+          "power-systems-basics"
+      ]
+  },
+  'industrial-wiring': {
+      id: "industrial-wiring",
+      title: "Industrial Wiring",
+      icon: "cpu",
+      description: "Master the concepts and practical applications of Industrial Wiring in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "10 hours",
+      whyLearnThis: "Industrial Wiring is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Industrial Wiring",
+          "Implement Industrial Wiring in real-world scenarios",
+          "Troubleshoot Industrial Wiring systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-industrial-wiring",
+                  title: "Industrial Wiring Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Industrial Wiring.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-industrial-wiring",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "industrial-wiring"
+      ],
+      prerequisites: [
+          "three-phase-systems"
+      ]
+  },
+  'industrial-sensors': {
+      id: "industrial-sensors",
+      title: "Industrial Sensors",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Industrial Sensors in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "7 hours",
+      whyLearnThis: "Industrial Sensors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Industrial Sensors",
+          "Implement Industrial Sensors in real-world scenarios",
+          "Troubleshoot Industrial Sensors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-industrial-sensors",
+                  title: "Industrial Sensors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Industrial Sensors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-industrial-sensors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "industrial-sensors"
+      ],
+      prerequisites: [
+          "industrial-wiring"
+      ]
+  },
+  'proximity-sensors': {
+      id: "proximity-sensors",
+      title: "Proximity Sensors",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Proximity Sensors in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "7 hours",
+      whyLearnThis: "Proximity Sensors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Proximity Sensors",
+          "Implement Proximity Sensors in real-world scenarios",
+          "Troubleshoot Proximity Sensors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-proximity-sensors",
+                  title: "Proximity Sensors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Proximity Sensors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-proximity-sensors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "proximity-sensors"
+      ],
+      prerequisites: [
+          "industrial-sensors"
+      ]
+  },
+  'photoelectric-sensors': {
+      id: "photoelectric-sensors",
+      title: "Photoelectric Sensors",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Photoelectric Sensors in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "2 hours",
+      whyLearnThis: "Photoelectric Sensors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Photoelectric Sensors",
+          "Implement Photoelectric Sensors in real-world scenarios",
+          "Troubleshoot Photoelectric Sensors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-photoelectric-sensors",
+                  title: "Photoelectric Sensors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Photoelectric Sensors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-photoelectric-sensors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "photoelectric-sensors"
+      ],
+      prerequisites: [
+          "proximity-sensors"
+      ]
+  },
+  'limit-switches': {
+      id: "limit-switches",
+      title: "Limit Switches",
+      icon: "cpu",
+      description: "Master the concepts and practical applications of Limit Switches in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "7 hours",
+      whyLearnThis: "Limit Switches is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Limit Switches",
+          "Implement Limit Switches in real-world scenarios",
+          "Troubleshoot Limit Switches systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-limit-switches",
+                  title: "Limit Switches Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Limit Switches.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-limit-switches",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "limit-switches"
+      ],
+      prerequisites: [
+          "photoelectric-sensors"
+      ]
+  },
+  'pressure-sensors': {
+      id: "pressure-sensors",
+      title: "Pressure Sensors",
+      icon: "cpu",
+      description: "Master the concepts and practical applications of Pressure Sensors in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Pressure Sensors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Pressure Sensors",
+          "Implement Pressure Sensors in real-world scenarios",
+          "Troubleshoot Pressure Sensors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-pressure-sensors",
+                  title: "Pressure Sensors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Pressure Sensors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-pressure-sensors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "pressure-sensors"
+      ],
+      prerequisites: [
+          "limit-switches"
+      ]
+  },
+  'relays': {
+      id: "relays",
+      title: "Relays",
+      icon: "wifi",
+      description: "Master the concepts and practical applications of Relays in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "8 hours",
+      whyLearnThis: "Relays is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Relays",
+          "Implement Relays in real-world scenarios",
+          "Troubleshoot Relays systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-relays",
+                  title: "Relays Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Relays.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-relays",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "relays"
+      ],
+      prerequisites: [
+          "pressure-sensors"
+      ]
+  },
+  'contactors': {
+      id: "contactors",
+      title: "Contactors",
+      icon: "zap",
+      description: "Master the concepts and practical applications of Contactors in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "9 hours",
+      whyLearnThis: "Contactors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Contactors",
+          "Implement Contactors in real-world scenarios",
+          "Troubleshoot Contactors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-contactors",
+                  title: "Contactors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Contactors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-contactors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "contactors"
+      ],
+      prerequisites: [
+          "relays"
+      ]
+  },
+  'mcbs-mccbs': {
+      id: "mcbs-mccbs",
+      title: "MCBs & MCCBs",
+      icon: "code",
+      description: "Master the concepts and practical applications of MCBs & MCCBs in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "4 hours",
+      whyLearnThis: "MCBs & MCCBs is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of MCBs & MCCBs",
+          "Implement MCBs & MCCBs in real-world scenarios",
+          "Troubleshoot MCBs & MCCBs systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-mcbs-mccbs",
+                  title: "MCBs & MCCBs Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to MCBs & MCCBs.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-mcbs-mccbs",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "mcbs-mccbs"
+      ],
+      prerequisites: [
+          "contactors"
+      ]
+  },
+  'overload-relays': {
+      id: "overload-relays",
+      title: "Overload Relays",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of Overload Relays in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Overload Relays is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Overload Relays",
+          "Implement Overload Relays in real-world scenarios",
+          "Troubleshoot Overload Relays systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-overload-relays",
+                  title: "Overload Relays Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Overload Relays.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-overload-relays",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "overload-relays"
+      ],
+      prerequisites: [
+          "mcbs-mccbs"
+      ]
+  },
+  'control-panels': {
+      id: "control-panels",
+      title: "Control Panels",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Control Panels in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "11 hours",
+      whyLearnThis: "Control Panels is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Control Panels",
+          "Implement Control Panels in real-world scenarios",
+          "Troubleshoot Control Panels systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-control-panels",
+                  title: "Control Panels Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Control Panels.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-control-panels",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "control-panels"
+      ],
+      prerequisites: [
+          "overload-relays"
+      ]
+  },
+  'motor-protection': {
+      id: "motor-protection",
+      title: "Motor Protection",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Motor Protection in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "9 hours",
+      whyLearnThis: "Motor Protection is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Motor Protection",
+          "Implement Motor Protection in real-world scenarios",
+          "Troubleshoot Motor Protection systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-motor-protection",
+                  title: "Motor Protection Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Motor Protection.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-motor-protection",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "motor-protection"
+      ],
+      prerequisites: [
+          "control-panels"
+      ]
+  },
+  'plc-fundamentals': {
+      id: "plc-fundamentals",
+      title: "PLC Fundamentals",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of PLC Fundamentals in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "6 hours",
+      whyLearnThis: "PLC Fundamentals is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of PLC Fundamentals",
+          "Implement PLC Fundamentals in real-world scenarios",
+          "Troubleshoot PLC Fundamentals systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-plc-fundamentals",
+                  title: "PLC Fundamentals Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to PLC Fundamentals.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-plc-fundamentals",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "plc-fundamentals"
+      ],
+      prerequisites: [
+          "motor-protection"
+      ]
+  },
+  'plc-hardware': {
+      id: "plc-hardware",
+      title: "PLC Hardware",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of PLC Hardware in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "3 hours",
+      whyLearnThis: "PLC Hardware is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of PLC Hardware",
+          "Implement PLC Hardware in real-world scenarios",
+          "Troubleshoot PLC Hardware systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-plc-hardware",
+                  title: "PLC Hardware Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to PLC Hardware.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-plc-hardware",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "plc-hardware"
+      ],
+      prerequisites: [
+          "plc-fundamentals"
+      ]
+  },
+  'digital-inputs-outputs': {
+      id: "digital-inputs-outputs",
+      title: "Digital Inputs & Outputs",
+      icon: "microchip",
+      description: "Master the concepts and practical applications of Digital Inputs & Outputs in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Digital Inputs & Outputs is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Digital Inputs & Outputs",
+          "Implement Digital Inputs & Outputs in real-world scenarios",
+          "Troubleshoot Digital Inputs & Outputs systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-digital-inputs-outputs",
+                  title: "Digital Inputs & Outputs Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Digital Inputs & Outputs.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-digital-inputs-outputs",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "digital-inputs-outputs"
+      ],
+      prerequisites: [
+          "plc-hardware"
+      ]
+  },
+  'analog-inputs-outputs': {
+      id: "analog-inputs-outputs",
+      title: "Analog Inputs & Outputs",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Analog Inputs & Outputs in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "2 hours",
+      whyLearnThis: "Analog Inputs & Outputs is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Analog Inputs & Outputs",
+          "Implement Analog Inputs & Outputs in real-world scenarios",
+          "Troubleshoot Analog Inputs & Outputs systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-analog-inputs-outputs",
+                  title: "Analog Inputs & Outputs Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Analog Inputs & Outputs.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-analog-inputs-outputs",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "analog-inputs-outputs"
+      ],
+      prerequisites: [
+          "digital-inputs-outputs"
+      ]
+  },
+  'ladder-logic': {
+      id: "ladder-logic",
+      title: "Ladder Logic",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Ladder Logic in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "11 hours",
+      whyLearnThis: "Ladder Logic is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Ladder Logic",
+          "Implement Ladder Logic in real-world scenarios",
+          "Troubleshoot Ladder Logic systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-ladder-logic",
+                  title: "Ladder Logic Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Ladder Logic.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-ladder-logic",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "ladder-logic"
+      ],
+      prerequisites: [
+          "analog-inputs-outputs"
+      ]
+  },
+  'introduction-to-hmi': {
+      id: "introduction-to-hmi",
+      title: "Introduction to HMI",
+      icon: "cloud",
+      description: "Master the concepts and practical applications of Introduction to HMI in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "2 hours",
+      whyLearnThis: "Introduction to HMI is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Introduction to HMI",
+          "Implement Introduction to HMI in real-world scenarios",
+          "Troubleshoot Introduction to HMI systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-introduction-to-hmi",
+                  title: "Introduction to HMI Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Introduction to HMI.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-introduction-to-hmi",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "introduction-to-hmi"
+      ],
+      prerequisites: [
+          "ladder-logic"
+      ]
+  },
+  'screen-design': {
+      id: "screen-design",
+      title: "Screen Design",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Screen Design in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Screen Design is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Screen Design",
+          "Implement Screen Design in real-world scenarios",
+          "Troubleshoot Screen Design systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-screen-design",
+                  title: "Screen Design Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Screen Design.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-screen-design",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "screen-design"
+      ],
+      prerequisites: [
+          "introduction-to-hmi"
+      ]
+  },
+  'buttons-indicators': {
+      id: "buttons-indicators",
+      title: "Buttons & Indicators",
+      icon: "cpu",
+      description: "Master the concepts and practical applications of Buttons & Indicators in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "7 hours",
+      whyLearnThis: "Buttons & Indicators is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Buttons & Indicators",
+          "Implement Buttons & Indicators in real-world scenarios",
+          "Troubleshoot Buttons & Indicators systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-buttons-indicators",
+                  title: "Buttons & Indicators Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Buttons & Indicators.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-buttons-indicators",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "buttons-indicators"
+      ],
+      prerequisites: [
+          "screen-design"
+      ]
+  },
+  'alarms-recipes': {
+      id: "alarms-recipes",
+      title: "Alarms & Recipes",
+      icon: "settings",
+      description: "Master the concepts and practical applications of Alarms & Recipes in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Alarms & Recipes is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Alarms & Recipes",
+          "Implement Alarms & Recipes in real-world scenarios",
+          "Troubleshoot Alarms & Recipes systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-alarms-recipes",
+                  title: "Alarms & Recipes Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Alarms & Recipes.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-alarms-recipes",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "alarms-recipes"
+      ],
+      prerequisites: [
+          "buttons-indicators"
+      ]
+  },
+  'scada-basics': {
+      id: "scada-basics",
+      title: "SCADA Basics",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of SCADA Basics in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "9 hours",
+      whyLearnThis: "SCADA Basics is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of SCADA Basics",
+          "Implement SCADA Basics in real-world scenarios",
+          "Troubleshoot SCADA Basics systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-scada-basics",
+                  title: "SCADA Basics Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to SCADA Basics.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-scada-basics",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "scada-basics"
+      ],
+      prerequisites: [
+          "alarms-recipes"
+      ]
+  },
+  'architecture': {
+      id: "architecture",
+      title: "Architecture",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Architecture in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Architecture is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Architecture",
+          "Implement Architecture in real-world scenarios",
+          "Troubleshoot Architecture systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-architecture",
+                  title: "Architecture Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Architecture.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-architecture",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "architecture"
+      ],
+      prerequisites: [
+          "scada-basics"
+      ]
+  },
+  'communication': {
+      id: "communication",
+      title: "Communication",
+      icon: "code",
+      description: "Master the concepts and practical applications of Communication in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "4 hours",
+      whyLearnThis: "Communication is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Communication",
+          "Implement Communication in real-world scenarios",
+          "Troubleshoot Communication systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-communication",
+                  title: "Communication Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Communication.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-communication",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "communication"
+      ],
+      prerequisites: [
+          "architecture"
+      ]
+  },
+  'tag-database': {
+      id: "tag-database",
+      title: "Tag Database",
+      icon: "code",
+      description: "Master the concepts and practical applications of Tag Database in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Tag Database is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Tag Database",
+          "Implement Tag Database in real-world scenarios",
+          "Troubleshoot Tag Database systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-tag-database",
+                  title: "Tag Database Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Tag Database.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-tag-database",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "tag-database"
+      ],
+      prerequisites: [
+          "communication"
+      ]
+  },
+  'rs232-rs485': {
+      id: "rs232-rs485",
+      title: "RS232 & RS485",
+      icon: "code",
+      description: "Master the concepts and practical applications of RS232 & RS485 in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "4 hours",
+      whyLearnThis: "RS232 & RS485 is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of RS232 & RS485",
+          "Implement RS232 & RS485 in real-world scenarios",
+          "Troubleshoot RS232 & RS485 systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-rs232-rs485",
+                  title: "RS232 & RS485 Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to RS232 & RS485.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-rs232-rs485",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "rs232-rs485"
+      ],
+      prerequisites: [
+          "tag-database"
+      ]
+  },
+  'modbus-rtu': {
+      id: "modbus-rtu",
+      title: "Modbus RTU",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of Modbus RTU in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "4 hours",
+      whyLearnThis: "Modbus RTU is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Modbus RTU",
+          "Implement Modbus RTU in real-world scenarios",
+          "Troubleshoot Modbus RTU systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-modbus-rtu",
+                  title: "Modbus RTU Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Modbus RTU.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-modbus-rtu",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "modbus-rtu"
+      ],
+      prerequisites: [
+          "rs232-rs485"
+      ]
+  },
+  'modbus-tcp': {
+      id: "modbus-tcp",
+      title: "Modbus TCP",
+      icon: "cloud",
+      description: "Master the concepts and practical applications of Modbus TCP in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "2 hours",
+      whyLearnThis: "Modbus TCP is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Modbus TCP",
+          "Implement Modbus TCP in real-world scenarios",
+          "Troubleshoot Modbus TCP systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-modbus-tcp",
+                  title: "Modbus TCP Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Modbus TCP.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-modbus-tcp",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "modbus-tcp"
+      ],
+      prerequisites: [
+          "modbus-rtu"
+      ]
+  },
+  'profibus': {
+      id: "profibus",
+      title: "Profibus",
+      icon: "zap",
+      description: "Master the concepts and practical applications of Profibus in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "9 hours",
+      whyLearnThis: "Profibus is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Profibus",
+          "Implement Profibus in real-world scenarios",
+          "Troubleshoot Profibus systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-profibus",
+                  title: "Profibus Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Profibus.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-profibus",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "profibus"
+      ],
+      prerequisites: [
+          "modbus-tcp"
+      ]
+  },
+  'profinet': {
+      id: "profinet",
+      title: "Profinet",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of Profinet in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "7 hours",
+      whyLearnThis: "Profinet is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Profinet",
+          "Implement Profinet in real-world scenarios",
+          "Troubleshoot Profinet systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-profinet",
+                  title: "Profinet Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Profinet.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-profinet",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "profinet"
+      ],
+      prerequisites: [
+          "profibus"
+      ]
+  },
+  'vfd-basics': {
+      id: "vfd-basics",
+      title: "VFD Basics",
+      icon: "code",
+      description: "Master the concepts and practical applications of VFD Basics in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "10 hours",
+      whyLearnThis: "VFD Basics is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of VFD Basics",
+          "Implement VFD Basics in real-world scenarios",
+          "Troubleshoot VFD Basics systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-vfd-basics",
+                  title: "VFD Basics Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to VFD Basics.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-vfd-basics",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "vfd-basics"
+      ],
+      prerequisites: [
+          "profinet"
+      ]
+  },
+  'motor-speed-control': {
+      id: "motor-speed-control",
+      title: "Motor Speed Control",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Motor Speed Control in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Motor Speed Control is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Motor Speed Control",
+          "Implement Motor Speed Control in real-world scenarios",
+          "Troubleshoot Motor Speed Control systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-motor-speed-control",
+                  title: "Motor Speed Control Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Motor Speed Control.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-motor-speed-control",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "motor-speed-control"
+      ],
+      prerequisites: [
+          "vfd-basics"
+      ]
+  },
+  'parameter-configuration': {
+      id: "parameter-configuration",
+      title: "Parameter Configuration",
+      icon: "zap",
+      description: "Master the concepts and practical applications of Parameter Configuration in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "10 hours",
+      whyLearnThis: "Parameter Configuration is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Parameter Configuration",
+          "Implement Parameter Configuration in real-world scenarios",
+          "Troubleshoot Parameter Configuration systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-parameter-configuration",
+                  title: "Parameter Configuration Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Parameter Configuration.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-parameter-configuration",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "parameter-configuration"
+      ],
+      prerequisites: [
+          "motor-speed-control"
+      ]
+  },
+  'servo-motors': {
+      id: "servo-motors",
+      title: "Servo Motors",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Servo Motors in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "2 hours",
+      whyLearnThis: "Servo Motors is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Servo Motors",
+          "Implement Servo Motors in real-world scenarios",
+          "Troubleshoot Servo Motors systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-servo-motors",
+                  title: "Servo Motors Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Servo Motors.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-servo-motors",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "servo-motors"
+      ],
+      prerequisites: [
+          "parameter-configuration"
+      ]
+  },
+  'servo-drives': {
+      id: "servo-drives",
+      title: "Servo Drives",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Servo Drives in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Servo Drives is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Servo Drives",
+          "Implement Servo Drives in real-world scenarios",
+          "Troubleshoot Servo Drives systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-servo-drives",
+                  title: "Servo Drives Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Servo Drives.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-servo-drives",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "servo-drives"
+      ],
+      prerequisites: [
+          "servo-motors"
+      ]
+  },
+  'motion-controllers': {
+      id: "motion-controllers",
+      title: "Motion Controllers",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Motion Controllers in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "6 hours",
+      whyLearnThis: "Motion Controllers is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Motion Controllers",
+          "Implement Motion Controllers in real-world scenarios",
+          "Troubleshoot Motion Controllers systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-motion-controllers",
+                  title: "Motion Controllers Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Motion Controllers.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-motion-controllers",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "motion-controllers"
+      ],
+      prerequisites: [
+          "servo-drives"
+      ]
+  },
+  'industrial-iot': {
+      id: "industrial-iot",
+      title: "Industrial IoT",
+      icon: "microchip",
+      description: "Master the concepts and practical applications of Industrial IoT in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "6 hours",
+      whyLearnThis: "Industrial IoT is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Industrial IoT",
+          "Implement Industrial IoT in real-world scenarios",
+          "Troubleshoot Industrial IoT systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-industrial-iot",
+                  title: "Industrial IoT Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Industrial IoT.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-industrial-iot",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "industrial-iot"
+      ],
+      prerequisites: [
+          "motion-controllers"
+      ]
+  },
+  'smart-factory': {
+      id: "smart-factory",
+      title: "Smart Factory",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Smart Factory in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "4 hours",
+      whyLearnThis: "Smart Factory is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Smart Factory",
+          "Implement Smart Factory in real-world scenarios",
+          "Troubleshoot Smart Factory systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-smart-factory",
+                  title: "Smart Factory Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Smart Factory.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-smart-factory",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "smart-factory"
+      ],
+      prerequisites: [
+          "industrial-iot"
+      ]
+  },
+  'digital-twin': {
+      id: "digital-twin",
+      title: "Digital Twin",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Digital Twin in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "6 hours",
+      whyLearnThis: "Digital Twin is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Digital Twin",
+          "Implement Digital Twin in real-world scenarios",
+          "Troubleshoot Digital Twin systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-digital-twin",
+                  title: "Digital Twin Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Digital Twin.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-digital-twin",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "digital-twin"
+      ],
+      prerequisites: [
+          "smart-factory"
+      ]
+  },
+  'edge-computing': {
+      id: "edge-computing",
+      title: "Edge Computing",
+      icon: "message-square",
+      description: "Master the concepts and practical applications of Edge Computing in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "11 hours",
+      whyLearnThis: "Edge Computing is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Edge Computing",
+          "Implement Edge Computing in real-world scenarios",
+          "Troubleshoot Edge Computing systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-edge-computing",
+                  title: "Edge Computing Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Edge Computing.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-edge-computing",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "edge-computing"
+      ],
+      prerequisites: [
+          "digital-twin"
+      ]
+  },
+  'manufacturing-automation': {
+      id: "manufacturing-automation",
+      title: "Manufacturing Automation",
+      icon: "bot",
+      description: "Master the concepts and practical applications of Manufacturing Automation in industrial automation.",
+      difficulty: "Beginner",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Manufacturing Automation is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Manufacturing Automation",
+          "Implement Manufacturing Automation in real-world scenarios",
+          "Troubleshoot Manufacturing Automation systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-manufacturing-automation",
+                  title: "Manufacturing Automation Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Manufacturing Automation.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-manufacturing-automation",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Beginner",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "manufacturing-automation"
+      ],
+      prerequisites: [
+          "edge-computing"
+      ]
+  },
+  'power-plant-automation': {
+      id: "power-plant-automation",
+      title: "Power Plant Automation",
+      icon: "gauge",
+      description: "Master the concepts and practical applications of Power Plant Automation in industrial automation.",
+      difficulty: "Intermediate",
+      estimatedTime: "9 hours",
+      whyLearnThis: "Power Plant Automation is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Power Plant Automation",
+          "Implement Power Plant Automation in real-world scenarios",
+          "Troubleshoot Power Plant Automation systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-power-plant-automation",
+                  title: "Power Plant Automation Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Power Plant Automation.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-power-plant-automation",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Intermediate",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "power-plant-automation"
+      ],
+      prerequisites: [
+          "manufacturing-automation"
+      ]
+  },
+  'automotive-automation': {
+      id: "automotive-automation",
+      title: "Automotive Automation",
+      icon: "wifi",
+      description: "Master the concepts and practical applications of Automotive Automation in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "3 hours",
+      whyLearnThis: "Automotive Automation is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Automotive Automation",
+          "Implement Automotive Automation in real-world scenarios",
+          "Troubleshoot Automotive Automation systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-automotive-automation",
+                  title: "Automotive Automation Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Automotive Automation.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-automotive-automation",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "automotive-automation"
+      ],
+      prerequisites: [
+          "power-plant-automation"
+      ]
+  },
+  'pharmaceutical-automation': {
+      id: "pharmaceutical-automation",
+      title: "Pharmaceutical Automation",
+      icon: "microchip",
+      description: "Master the concepts and practical applications of Pharmaceutical Automation in industrial automation.",
+      difficulty: "Advanced",
+      estimatedTime: "5 hours",
+      whyLearnThis: "Pharmaceutical Automation is a critical skill for building robust automated systems.",
+      learningOutcomes: [
+          "Understand the fundamentals of Pharmaceutical Automation",
+          "Implement Pharmaceutical Automation in real-world scenarios",
+          "Troubleshoot Pharmaceutical Automation systems"
+      ],
+      resources: {
+          videos: [
+              {
+                  id: "v1-pharmaceutical-automation",
+                  title: "Pharmaceutical Automation Masterclass",
+                  platform: "YouTube",
+                  difficulty: "Beginner",
+                  estimatedTime: "1 Hour",
+                  description: "A comprehensive introduction to Pharmaceutical Automation.",
+                  url: "#"
+              }
+          ],
+          books: [],
+          documentation: [],
+          simulations: [],
+          exercises: [],
+          projects: [],
+          interviewQuestions: [],
+          quiz: {
+              id: "q1-pharmaceutical-automation",
+              questionCount: 5,
+              passingScore: 80,
+              difficulty: "Advanced",
+              completed: false
+          }
+      },
+      tags: [
+          "automation",
+          "pharmaceutical-automation"
+      ],
+      prerequisites: [
+          "automotive-automation"
+      ]
+  },
 }
 
 export function getSkill(id: string): Skill | undefined {
