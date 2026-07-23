@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { createClient } from '@/lib/supabase/server'
 import { bookingSchema } from '@/lib/validations/booking'
 
 const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder_key_1234')
@@ -8,30 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder_key_1234
 export async function POST(req: NextRequest) {
   try {
     const ip = req.headers.get('x-forwarded-for') || '127.0.0.1'
-    const supabase = await createClient()
-
-    // --- Rate Limiting (Max 3 submissions per IP per hour) ---
-    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000).toISOString()
     
-    // Attempt to check rate limit in Supabase
-    // If the table doesn't exist (e.g. during dev), we'll catch the error and skip rate limiting gracefully.
-    try {
-      const { data: recentRequests, error: rateError } = await supabase
-        .from('rate_limits')
-        .select('id')
-        .eq('ip_address', ip)
-        .gte('created_at', oneHourAgo)
-
-      if (!rateError && recentRequests && recentRequests.length >= 3) {
-        return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 })
-      }
-
-      // Log the request
-      await supabase.from('rate_limits').insert([{ ip_address: ip, endpoint: '/api/bookings/workshop' }])
-    } catch (e) {
-      console.warn('Rate limit table not configured or error occurred, skipping DB-based rate limiting.')
-    }
-
     // --- Body Validation ---
     const body = await req.json()
     const result = bookingSchema.safeParse(body)
@@ -42,35 +18,44 @@ export async function POST(req: NextRequest) {
 
     const data = result.data
 
-    // --- Database Insertion ---
-    try {
-      const { error: insertError } = await supabase
-        .from('workshop_bookings')
-        .insert([{
-          contact_name: data.contactName,
-          designation: data.designation,
-          college_name: data.collegeName,
-          college_city: data.collegeCity,
-          college_state: data.collegeState,
-          official_email: data.officialEmail,
-          whatsapp_number: data.whatsappNumber,
-          workshop_topic: data.workshopTopic,
-          preferred_date: data.preferredDate,
-          alternate_date: data.alternateDate || null,
-          expected_students: data.expectedStudents,
-          venue: data.venue,
-          additional_notes: data.additionalNotes,
-          referral_source: data.referralSource,
-          status: 'pending',
-          ip_address: ip
-        }])
-
-      if (insertError) {
-        console.error('Supabase insert error:', insertError)
-        // We log it but proceed to send the email anyway to ensure the demo/flow works even if DB schema isn't ready.
+    // --- Google Sheets Insertion ---
+    const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL
+    if (webhookUrl) {
+      try {
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          // Note: using text/plain prevents CORS preflight issues when calling Apps Script directly from browsers,
+          // but since this is server-side we can safely use application/json.
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            timestamp: new Date().toISOString(),
+            ip_address: ip,
+            contact_name: data.contactName,
+            designation: data.designation,
+            college_name: data.collegeName,
+            college_city: data.collegeCity,
+            college_state: data.collegeState,
+            official_email: data.officialEmail,
+            whatsapp_number: data.whatsappNumber,
+            workshop_topic: data.workshopTopic,
+            preferred_date: data.preferredDate,
+            alternate_date: data.alternateDate || '',
+            expected_students: data.expectedStudents,
+            venue: data.venue,
+            additional_notes: data.additionalNotes || '',
+            referral_source: data.referralSource || ''
+          })
+        })
+        if (!response.ok) {
+          console.error('Failed to save to Google Sheets:', await response.text())
+        }
+      } catch (e) {
+        console.error('Error sending to Google Sheets Webhook:', e)
       }
-    } catch (e) {
-      console.warn('Workshop bookings table might not exist.')
+    } else {
+      console.warn('GOOGLE_SHEET_WEBHOOK_URL is not set. Skipping Google Sheets insertion.')
     }
 
     // --- Email Sending via Resend ---

@@ -7,6 +7,9 @@ import { useEffect, Suspense } from 'react'
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 
+const isGaValid = GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'your_ga_measurement_id' && GA_MEASUREMENT_ID !== 'null';
+const isMetaValid = META_PIXEL_ID && META_PIXEL_ID !== 'your_meta_pixel_id' && META_PIXEL_ID !== 'null';
+
 // Type declarations for window object
 declare global {
   interface Window {
@@ -21,7 +24,7 @@ declare global {
 export const fireEnrollmentCompleted = (courseSlug: string, amount: number) => {
   if (typeof window !== 'undefined') {
     // GA4
-    if (window.gtag) {
+    if (isGaValid && window.gtag) {
       window.gtag('event', 'enrollment_completed', {
         course_slug: courseSlug,
         value: amount,
@@ -29,7 +32,7 @@ export const fireEnrollmentCompleted = (courseSlug: string, amount: number) => {
       })
     }
     // Meta Pixel
-    if (window.fbq) {
+    if (isMetaValid && window.fbq) {
       window.fbq('track', 'Purchase', {
         content_name: courseSlug,
         value: amount,
@@ -42,14 +45,14 @@ export const fireEnrollmentCompleted = (courseSlug: string, amount: number) => {
 export const fireBookingRequestSubmitted = (topic: string, college: string) => {
   if (typeof window !== 'undefined') {
     // GA4
-    if (window.gtag) {
+    if (isGaValid && window.gtag) {
       window.gtag('event', 'booking_request_submitted', {
         topic: topic,
         college: college
       })
     }
     // Meta Pixel
-    if (window.fbq) {
+    if (isMetaValid && window.fbq) {
       window.fbq('track', 'Lead', {
         content_category: 'Workshop Booking',
         content_name: topic
@@ -62,7 +65,7 @@ export default function Analytics() {
   return (
     <>
       {/* Google Analytics 4 */}
-      {GA_MEASUREMENT_ID && (
+      {isGaValid && (
         <>
           <Script
             strategy="afterInteractive"
@@ -86,7 +89,7 @@ export default function Analytics() {
       )}
 
       {/* Meta Pixel */}
-      {META_PIXEL_ID && (
+      {isMetaValid && (
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
@@ -125,14 +128,14 @@ function AnalyticsTracker() {
       const url = pathname + (searchStr ? `?${searchStr}` : '')
       
       // GA4 Pageview
-      if (GA_MEASUREMENT_ID && window.gtag) {
+      if (isGaValid && window.gtag) {
         window.gtag('config', GA_MEASUREMENT_ID, {
           page_path: url,
         })
       }
       
       // Meta Pixel Pageview
-      if (META_PIXEL_ID && window.fbq) {
+      if (isMetaValid && window.fbq) {
         window.fbq('track', 'PageView')
       }
     }

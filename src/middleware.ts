@@ -35,8 +35,14 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // Retrieve user session
-  const { data: { user } } = await supabase.auth.getUser()
+  // Retrieve user session with error handling for network/fetch failures
+  let user = null
+  try {
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+  } catch (err) {
+    console.warn('[Middleware] Failed to fetch user session (network or Supabase error):', err)
+  }
 
   const path = request.nextUrl.pathname
 

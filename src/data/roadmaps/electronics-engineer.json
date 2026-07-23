@@ -1,0 +1,50 @@
+{
+  "id": "electronics-engineer",
+  "title": "Electronics Engineer",
+  "description": "The foundation roadmap for every hardware engineer. Covers electronics fundamentals, circuit design, and practical engineering concepts.",
+  "skills": [
+    "engineering-mathematics",
+    "basic-electrical-engineering",
+    "basic-electronics",
+    "analog-electronics",
+    "digital-electronics",
+    "electronic-components",
+    "circuit-analysis",
+    "test-measurement",
+    "pcb-basics"
+  ],
+  "connections": [
+    {
+      "source": "engineering-mathematics",
+      "target": "basic-electrical-engineering"
+    },
+    {
+      "source": "basic-electrical-engineering",
+      "target": "basic-electronics"
+    },
+    {
+      "source": "basic-electronics",
+      "target": "analog-electronics"
+    },
+    {
+      "source": "analog-electronics",
+      "target": "digital-electronics"
+    },
+    {
+      "source": "digital-electronics",
+      "target": "electronic-components"
+    },
+    {
+      "source": "electronic-components",
+      "target": "circuit-analysis"
+    },
+    {
+      "source": "circuit-analysis",
+      "target": "test-measurement"
+    },
+    {
+      "source": "test-measurement",
+      "target": "pcb-basics"
+    }
+  ]
+}

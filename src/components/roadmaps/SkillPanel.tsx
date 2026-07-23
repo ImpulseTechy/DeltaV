@@ -20,7 +20,7 @@ interface SkillPanelProps {
 const Section = ({ title, children, defaultOpen = true }: { title: string, children: React.ReactNode, defaultOpen?: boolean }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen)
   return (
-    <section className="mb-6 border border-[#27272A] rounded-xl bg-[#121212] overflow-hidden">
+    <section className="shrink-0 mb-6 border border-[#27272A] rounded-xl bg-[#121212] overflow-hidden">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-5 py-4 flex items-center justify-between bg-[#18181B] hover:bg-[#27272A] transition-colors"
@@ -65,7 +65,7 @@ interface PremiumCardProps {
 const PremiumCard = ({ icon: Icon, title, platform, difficulty, time, description, url, onClick }: PremiumCardProps) => (
   <a 
     href={url} target="_blank" rel="noopener noreferrer" onClick={onClick}
-    className="group flex flex-col gap-3 p-4 rounded-lg bg-[#1A1A1A] border border-[#27272A] hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.15)] transition-all cursor-pointer"
+    className="shrink-0 group flex flex-col gap-3 p-4 rounded-lg bg-[#1A1A1A] border border-[#27272A] hover:border-orange hover:shadow-[0_0_15px_rgba(255,107,0,0.15)] transition-all cursor-pointer"
   >
     <div className="flex justify-between items-start">
       <div className="flex items-center gap-3">
@@ -106,7 +106,7 @@ export default function SkillPanel({
 
   return (
     <div
-      className={`fixed top-[60px] right-0 h-[calc(100vh-60px)] w-full md:w-[480px] lg:w-[550px] bg-[#0A0E1A] border-l border-[#27272A] shadow-[-10px_0_40px_rgba(0,0,0,0.7)] transform transition-transform duration-300 ease-in-out z-40 flex flex-col ${
+      className={`fixed top-[60px] right-0 h-[calc(100vh-60px)] w-full md:w-[480px] lg:w-[550px] bg-[#0A0E1A] border-l border-[#27272A] shadow-[-10px_0_40px_rgba(0,0,0,0.7)] transform transition-transform duration-300 ease-in-out z-[1000] flex flex-col ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >

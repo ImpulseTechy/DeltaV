@@ -1,22 +1,80 @@
 {
   "id": "iot-engineer",
   "title": "IoT Engineer",
-  "description": "Learn to connect embedded systems to the cloud, forming the backbone of the Internet of Things.",
+  "description": "Master connected devices, embedded systems, networking, cloud platforms, and real-world IoT deployments.",
   "skills": [
-    "basic-electronics",
-    "c-programming",
+    "electronics",
     "embedded-systems",
-    "esp32",
-    "wifi",
+    "communication-protocols",
+    "networking",
     "mqtt",
-    "aws-iot"
+    "http",
+    "wi-fi",
+    "ble",
+    "lora",
+    "cloud-iot",
+    "aws-iot",
+    "azure-iot",
+    "firebase",
+    "edge-ai",
+    "iot-security"
   ],
   "connections": [
-    { "source": "basic-electronics", "target": "embedded-systems" },
-    { "source": "c-programming", "target": "embedded-systems" },
-    { "source": "embedded-systems", "target": "esp32" },
-    { "source": "esp32", "target": "wifi" },
-    { "source": "wifi", "target": "mqtt" },
-    { "source": "mqtt", "target": "aws-iot" }
+    {
+      "source": "electronics",
+      "target": "embedded-systems"
+    },
+    {
+      "source": "embedded-systems",
+      "target": "communication-protocols"
+    },
+    {
+      "source": "communication-protocols",
+      "target": "networking"
+    },
+    {
+      "source": "networking",
+      "target": "mqtt"
+    },
+    {
+      "source": "mqtt",
+      "target": "http"
+    },
+    {
+      "source": "http",
+      "target": "wi-fi"
+    },
+    {
+      "source": "wi-fi",
+      "target": "ble"
+    },
+    {
+      "source": "ble",
+      "target": "lora"
+    },
+    {
+      "source": "lora",
+      "target": "cloud-iot"
+    },
+    {
+      "source": "cloud-iot",
+      "target": "aws-iot"
+    },
+    {
+      "source": "aws-iot",
+      "target": "azure-iot"
+    },
+    {
+      "source": "azure-iot",
+      "target": "firebase"
+    },
+    {
+      "source": "firebase",
+      "target": "edge-ai"
+    },
+    {
+      "source": "edge-ai",
+      "target": "iot-security"
+    }
   ]
 }

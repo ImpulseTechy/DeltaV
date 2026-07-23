@@ -1,0 +1,60 @@
+{
+  "id": "automation-engineer",
+  "title": "Automation Engineer (PLC & SCADA)",
+  "description": "Learn industrial automation using PLCs, SCADA systems, HMIs, and industrial communication.",
+  "skills": [
+    "industrial-electronics",
+    "plc-programming",
+    "ladder-logic",
+    "hmi",
+    "scada",
+    "vfd",
+    "industrial-sensors",
+    "modbus",
+    "opc-ua",
+    "ethercat",
+    "industry-40"
+  ],
+  "connections": [
+    {
+      "source": "industrial-electronics",
+      "target": "plc-programming"
+    },
+    {
+      "source": "plc-programming",
+      "target": "ladder-logic"
+    },
+    {
+      "source": "ladder-logic",
+      "target": "hmi"
+    },
+    {
+      "source": "hmi",
+      "target": "scada"
+    },
+    {
+      "source": "scada",
+      "target": "vfd"
+    },
+    {
+      "source": "vfd",
+      "target": "industrial-sensors"
+    },
+    {
+      "source": "industrial-sensors",
+      "target": "modbus"
+    },
+    {
+      "source": "modbus",
+      "target": "opc-ua"
+    },
+    {
+      "source": "opc-ua",
+      "target": "ethercat"
+    },
+    {
+      "source": "ethercat",
+      "target": "industry-40"
+    }
+  ]
+}

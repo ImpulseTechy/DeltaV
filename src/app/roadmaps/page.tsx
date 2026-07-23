@@ -20,7 +20,7 @@ const liveRoadmaps = [
     icon: Cpu,
     title: 'ECE Core Engineer',
     description: 'From basic electronics to embedded systems, PCB design, and placement prep. The complete path for core ECE roles.',
-    totalNodes: 52
+    totalNodes: 9
   },
   {
     id: 'embedded-iot',
@@ -35,6 +35,62 @@ const liveRoadmaps = [
     title: 'EEE Industrial Automation',
     description: 'PLC, SCADA, VFDs, motor drives, and Industry 4.0. The path for EEE students targeting automation roles.',
     totalNodes: 44
+  },
+  {
+    id: 'electronics-engineer',
+    icon: Cpu,
+    title: 'Electronics Engineer',
+    description: 'The foundation roadmap for every hardware engineer. Covers electronics fundamentals, circuit design, and practical engineering concepts.',
+    totalNodes: 9
+  },
+  {
+    id: 'embedded-systems-engineer',
+    icon: Microchip,
+    title: 'Embedded Systems Engineer',
+    description: 'Learn how to build firmware and software for microcontrollers and embedded devices.',
+    totalNodes: 19
+  },
+  {
+    id: 'iot-engineer',
+    icon: Wifi,
+    title: 'IoT Engineer',
+    description: 'Master connected devices, embedded systems, networking, cloud platforms, and real-world IoT deployments.',
+    totalNodes: 15
+  },
+  {
+    id: 'robotics-engineer',
+    icon: Bot,
+    title: 'Robotics Engineer',
+    description: 'Design intelligent robotic systems using electronics, embedded systems, AI, and ROS2.',
+    totalNodes: 15
+  },
+  {
+    id: 'automation-engineer',
+    icon: Settings,
+    title: 'Automation Engineer',
+    description: 'Learn industrial automation using PLCs, SCADA systems, HMIs, and industrial communication.',
+    totalNodes: 11
+  },
+  {
+    id: 'pcb-design-engineer',
+    icon: Cpu,
+    title: 'PCB Design Engineer',
+    description: 'Master professional PCB design from schematic capture to manufacturing.',
+    totalNodes: 12
+  },
+  {
+    id: 'vlsi-engineer',
+    icon: Microchip,
+    title: 'VLSI Engineer',
+    description: 'Learn semiconductor chip design from RTL to ASIC implementation.',
+    totalNodes: 9
+  },
+  {
+    id: 'computer-vision-engineer',
+    icon: Bot,
+    title: 'Computer Vision Engineer',
+    description: 'Build intelligent vision systems for robotics and embedded devices.',
+    totalNodes: 8
   }
 ]
 
@@ -62,25 +118,35 @@ const comingSoonRoadmaps = [
 export default async function RoadmapsPage() {
   const supabase = await createClient()
   
-  // 1. Get current user
-  const { data: { user } } = await supabase.auth.getUser()
+  // 1. Get current user with error handling for offline/network issues
+  let user = null
+  try {
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+  } catch (err) {
+    console.warn('[RoadmapsPage] Could not fetch user:', err)
+  }
 
   // 2. Student counts are fetched below using getStudentCount
 
   // 3. Fetch user progress if logged in
   const userProgress: Record<string, number> = {}
   if (user) {
-    await Promise.all(
-      liveRoadmaps.map(async (r) => {
-        const { count } = await supabase
-          .from('roadmap_progress')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_id', user.id)
-          .eq('roadmap_slug', r.id)
-          .eq('status', 'done')
-        userProgress[r.id] = count || 0
-      })
-    )
+    try {
+      await Promise.all(
+        liveRoadmaps.map(async (r) => {
+          const { count } = await supabase
+            .from('roadmap_progress')
+            .select('*', { count: 'exact', head: true })
+            .eq('user_id', user.id)
+            .eq('roadmap_slug', r.id)
+            .eq('status', 'done')
+          userProgress[r.id] = count || 0
+        })
+      )
+    } catch (err) {
+      console.warn('[RoadmapsPage] Could not fetch user progress:', err)
+    }
   }
 
   const { getStudentCount } = await import('@/lib/roadmaps/getStudentCount')

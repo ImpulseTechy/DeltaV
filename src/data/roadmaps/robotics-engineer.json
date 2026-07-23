@@ -1,0 +1,80 @@
+{
+  "id": "robotics-engineer",
+  "title": "Robotics Engineer",
+  "description": "Design intelligent robotic systems using electronics, embedded systems, AI, and ROS2.",
+  "skills": [
+    "electronics",
+    "embedded-systems",
+    "motors",
+    "sensors",
+    "actuators",
+    "kinematics",
+    "dynamics",
+    "control-systems",
+    "ros2",
+    "gazebo",
+    "slam",
+    "computer-vision",
+    "ai-for-robotics",
+    "navigation",
+    "autonomous-systems"
+  ],
+  "connections": [
+    {
+      "source": "electronics",
+      "target": "embedded-systems"
+    },
+    {
+      "source": "embedded-systems",
+      "target": "motors"
+    },
+    {
+      "source": "motors",
+      "target": "sensors"
+    },
+    {
+      "source": "sensors",
+      "target": "actuators"
+    },
+    {
+      "source": "actuators",
+      "target": "kinematics"
+    },
+    {
+      "source": "kinematics",
+      "target": "dynamics"
+    },
+    {
+      "source": "dynamics",
+      "target": "control-systems"
+    },
+    {
+      "source": "control-systems",
+      "target": "ros2"
+    },
+    {
+      "source": "ros2",
+      "target": "gazebo"
+    },
+    {
+      "source": "gazebo",
+      "target": "slam"
+    },
+    {
+      "source": "slam",
+      "target": "computer-vision"
+    },
+    {
+      "source": "computer-vision",
+      "target": "ai-for-robotics"
+    },
+    {
+      "source": "ai-for-robotics",
+      "target": "navigation"
+    },
+    {
+      "source": "navigation",
+      "target": "autonomous-systems"
+    }
+  ]
+}

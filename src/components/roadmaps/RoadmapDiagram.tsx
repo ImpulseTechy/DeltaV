@@ -90,9 +90,18 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
     setNodes(layoutedNodes)
     setEdges(layoutedEdges)
     
-    // Fit view after a tiny delay to ensure React Flow has measured the canvas
+    // Center on the first/root node at a comfortable zoom level
     setTimeout(() => {
-      fitView({ padding: 0.2, duration: 800 })
+      if (layoutedNodes.length > 0) {
+        // Find root nodes (no incoming edges)
+        const rootNodes = layoutedNodes.filter(node => !initialEdges.some(edge => edge.target === node.id));
+        const targetNode = rootNodes.length > 0 ? rootNodes[0] : layoutedNodes[0];
+        
+        // Offset y to place the node near the top, and center x
+        setCenter(targetNode.position.x + 120, targetNode.position.y - 100, { zoom: 1.0, duration: 800 });
+      } else {
+        fitView({ padding: 0.2, duration: 800 });
+      }
     }, 100)
     
     // Load local progress
@@ -102,7 +111,7 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
         setProgress(JSON.parse(localData))
       } catch (e) {}
     }
-  }, [roadmapData, setNodes, setEdges, fitView])
+  }, [roadmapData, setNodes, setEdges, fitView, setCenter])
 
   // Helper to find all ancestors recursively
   const getAllAncestors = useCallback((nodeId: string, connections: {source: string, target: string}[]): Set<string> => {
@@ -207,8 +216,9 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
     if (selectedNodeId) {
       const node = nodes.find(n => n.id === selectedNodeId)
       if (node) {
-        // Offset slightly to the left so sidebar doesn't cover it
-        setCenter(node.position.x - 100, node.position.y, { zoom: 1.2, duration: 800 })
+        // Offset the center of the viewport to the right of the node
+        // so the node itself is pushed to the left side of the screen
+        setCenter(node.position.x + 350, node.position.y + 40, { zoom: 1.2, duration: 800 })
       }
     }
   }, [selectedNodeId])
@@ -240,20 +250,20 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
     <div className="flex flex-col h-screen w-full bg-[#0A0E1A] overflow-hidden">
       
       {/* HEADER BAR */}
-      <header className="fixed top-0 w-full h-[60px] bg-[#0D0D0D] border-b border-[#3F3F46] z-50 px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <Link href="/roadmaps" className="font-body text-[13px] text-[#A1A1AA] hover:text-white flex items-center gap-1 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> Home
+      <header className="fixed top-0 w-full h-[60px] bg-[#0D0D0D] border-b border-[#3F3F46] z-[1100] px-4 md:px-6 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 md:gap-4 overflow-hidden">
+          <Link href="/roadmaps" className="font-body text-[13px] text-[#A1A1AA] hover:text-white flex items-center gap-1 transition-colors whitespace-nowrap">
+            <ArrowLeft className="w-4 h-4" /> <span className="hidden md:inline">Home</span>
           </Link>
-          <div className="w-[1px] h-6 bg-[#3F3F46]"></div>
-          <h1 className="font-display font-semibold text-[1.1rem] text-white">
+          <div className="w-[1px] h-6 bg-[#3F3F46] shrink-0"></div>
+          <h1 className="font-display font-semibold text-[1rem] md:text-[1.1rem] text-white truncate">
             {roadmapData.title}
           </h1>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 shrink-0">
           {/* Global Search */}
-          <div className="relative">
+          <div className="relative hidden md:block">
             <Search className="w-4 h-4 text-[#A1A1AA] absolute left-3 top-1/2 -translate-y-1/2" />
             <input 
               type="text" 
@@ -267,7 +277,7 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
       </header>
 
       {/* CANVAS */}
-      <div className="w-full h-full pt-[60px]">
+      <div className="relative w-full h-full pt-[60px] isolate z-0">
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -280,8 +290,13 @@ function DiagramContent({ roadmapData }: RoadmapDiagramProps) {
           edgeTypes={edgeTypes}
           minZoom={0.2}
           maxZoom={2}
-          panOnScroll={true}
+          panOnDrag={!selectedNodeId}
+          panOnScroll={!selectedNodeId}
           zoomOnScroll={false}
+          zoomOnDoubleClick={!selectedNodeId}
+          zoomOnPinch={!selectedNodeId}
+          nodesDraggable={false}
+          nodesConnectable={false}
           panOnScrollMode={PanOnScrollMode.Free}
           proOptions={{ hideAttribution: true }}
         >

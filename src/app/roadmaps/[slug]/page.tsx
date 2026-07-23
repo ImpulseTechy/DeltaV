@@ -6,7 +6,19 @@ import fs from 'fs'
 import path from 'path'
 import { CareerPath } from '@/types/skills'
 
-const VALID_SLUGS = ['ece-core', 'embedded-iot', 'eee-automation', 'iot-engineer']
+const VALID_SLUGS = [
+  'ece-core', 
+  'embedded-iot', 
+  'eee-automation', 
+  'iot-engineer',
+  'electronics-engineer',
+  'embedded-systems-engineer',
+  'robotics-engineer',
+  'automation-engineer',
+  'pcb-design-engineer',
+  'vlsi-engineer',
+  'computer-vision-engineer'
+]
 
 export function generateStaticParams() {
   return VALID_SLUGS.map((slug) => ({ slug }))
@@ -44,23 +56,34 @@ export default async function RoadmapSlugPage({ params }: { params: { slug: stri
   const fileData = fs.readFileSync(filePath, 'utf-8')
   const data: CareerPath = JSON.parse(fileData)
 
-  // 2. Fetch User & Progress
+  // 2. Fetch User & Progress with error handling for network outages
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  
+  let user = null
+  try {
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+  } catch (err) {
+    console.warn('[RoadmapSlugPage] Could not fetch user:', err)
+  }
 
   let serverProgress: Record<string, string> = {}
 
   if (user) {
-    const { data: progressData } = await supabase
-      .from('roadmap_progress')
-      .select('node_id, status')
-      .eq('user_id', user.id)
-      .eq('roadmap_slug', slug)
+    try {
+      const { data: progressData } = await supabase
+        .from('roadmap_progress')
+        .select('node_id, status')
+        .eq('user_id', user.id)
+        .eq('roadmap_slug', slug)
 
-    if (progressData) {
-      progressData.forEach((row) => {
-        serverProgress[row.node_id] = row.status
-      })
+      if (progressData) {
+        progressData.forEach((row) => {
+          serverProgress[row.node_id] = row.status
+        })
+      }
+    } catch (err) {
+      console.warn('[RoadmapSlugPage] Could not fetch user progress:', err)
     }
   }
 

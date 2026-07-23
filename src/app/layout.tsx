@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth">
+    <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning data-scroll-behavior="smooth">
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary font-body antialiased pt-16">
         <ToastProvider>
           <Navbar />

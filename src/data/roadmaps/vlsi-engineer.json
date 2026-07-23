@@ -1,0 +1,50 @@
+{
+  "id": "vlsi-engineer",
+  "title": "VLSI Engineer",
+  "description": "Learn semiconductor chip design from RTL to ASIC implementation.",
+  "skills": [
+    "digital-logic",
+    "cmos",
+    "verilog",
+    "systemverilog",
+    "fpga-basics",
+    "rtl-design",
+    "asic-design-flow",
+    "static-timing-analysis",
+    "physical-design"
+  ],
+  "connections": [
+    {
+      "source": "digital-logic",
+      "target": "cmos"
+    },
+    {
+      "source": "cmos",
+      "target": "verilog"
+    },
+    {
+      "source": "verilog",
+      "target": "systemverilog"
+    },
+    {
+      "source": "systemverilog",
+      "target": "fpga-basics"
+    },
+    {
+      "source": "fpga-basics",
+      "target": "rtl-design"
+    },
+    {
+      "source": "rtl-design",
+      "target": "asic-design-flow"
+    },
+    {
+      "source": "asic-design-flow",
+      "target": "static-timing-analysis"
+    },
+    {
+      "source": "static-timing-analysis",
+      "target": "physical-design"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "pcb-design-engineer",
+  "title": "PCB Design Engineer",
+  "description": "Master professional PCB design from schematic capture to manufacturing.",
+  "skills": [
+    "circuit-design",
+    "schematic-design",
+    "kicad",
+    "altium-designer",
+    "easyeda",
+    "pcb-rules",
+    "pcb-layout",
+    "signal-integrity",
+    "emi-emc",
+    "manufacturing",
+    "assembly",
+    "testing"
+  ],
+  "connections": [
+    {
+      "source": "circuit-design",
+      "target": "schematic-design"
+    },
+    {
+      "source": "schematic-design",
+      "target": "kicad"
+    },
+    {
+      "source": "kicad",
+      "target": "altium-designer"
+    },
+    {
+      "source": "altium-designer",
+      "target": "easyeda"
+    },
+    {
+      "source": "easyeda",
+      "target": "pcb-rules"
+    },
+    {
+      "source": "pcb-rules",
+      "target": "pcb-layout"
+    },
+    {
+      "source": "pcb-layout",
+      "target": "signal-integrity"
+    },
+    {
+      "source": "signal-integrity",
+      "target": "emi-emc"
+    },
+    {
+      "source": "emi-emc",
+      "target": "manufacturing"
+    },
+    {
+      "source": "manufacturing",
+      "target": "assembly"
+    },
+    {
+      "source": "assembly",
+      "target": "testing"
+    }
+  ]
+}

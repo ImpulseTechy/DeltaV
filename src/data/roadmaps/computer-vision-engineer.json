@@ -1,0 +1,45 @@
+{
+  "id": "computer-vision-engineer",
+  "title": "Computer Vision Engineer",
+  "description": "Build intelligent vision systems for robotics and embedded devices.",
+  "skills": [
+    "python",
+    "opencv",
+    "image-processing",
+    "deep-learning",
+    "yolo",
+    "edge-ai",
+    "nvidia-jetson",
+    "raspberry-pi-vision"
+  ],
+  "connections": [
+    {
+      "source": "python",
+      "target": "opencv"
+    },
+    {
+      "source": "opencv",
+      "target": "image-processing"
+    },
+    {
+      "source": "image-processing",
+      "target": "deep-learning"
+    },
+    {
+      "source": "deep-learning",
+      "target": "yolo"
+    },
+    {
+      "source": "yolo",
+      "target": "edge-ai"
+    },
+    {
+      "source": "edge-ai",
+      "target": "nvidia-jetson"
+    },
+    {
+      "source": "nvidia-jetson",
+      "target": "raspberry-pi-vision"
+    }
+  ]
+}

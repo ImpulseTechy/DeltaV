@@ -1,0 +1,100 @@
+{
+  "id": "embedded-systems-engineer",
+  "title": "Embedded Systems Engineer",
+  "description": "Learn how to build firmware and software for microcontrollers and embedded devices.",
+  "skills": [
+    "c-programming",
+    "embedded-c",
+    "data-structures",
+    "microcontrollers",
+    "avr",
+    "stm32",
+    "esp32",
+    "arm-cortex",
+    "timers",
+    "interrupts",
+    "device-drivers",
+    "uart",
+    "spi",
+    "i2c",
+    "can",
+    "freertos",
+    "bootloader",
+    "debugging",
+    "embedded-linux-basics"
+  ],
+  "connections": [
+    {
+      "source": "c-programming",
+      "target": "embedded-c"
+    },
+    {
+      "source": "embedded-c",
+      "target": "data-structures"
+    },
+    {
+      "source": "data-structures",
+      "target": "microcontrollers"
+    },
+    {
+      "source": "microcontrollers",
+      "target": "avr"
+    },
+    {
+      "source": "avr",
+      "target": "stm32"
+    },
+    {
+      "source": "stm32",
+      "target": "esp32"
+    },
+    {
+      "source": "esp32",
+      "target": "arm-cortex"
+    },
+    {
+      "source": "arm-cortex",
+      "target": "timers"
+    },
+    {
+      "source": "timers",
+      "target": "interrupts"
+    },
+    {
+      "source": "interrupts",
+      "target": "device-drivers"
+    },
+    {
+      "source": "device-drivers",
+      "target": "uart"
+    },
+    {
+      "source": "uart",
+      "target": "spi"
+    },
+    {
+      "source": "spi",
+      "target": "i2c"
+    },
+    {
+      "source": "i2c",
+      "target": "can"
+    },
+    {
+      "source": "can",
+      "target": "freertos"
+    },
+    {
+      "source": "freertos",
+      "target": "bootloader"
+    },
+    {
+      "source": "bootloader",
+      "target": "debugging"
+    },
+    {
+      "source": "debugging",
+      "target": "embedded-linux-basics"
+    }
+  ]
+}
