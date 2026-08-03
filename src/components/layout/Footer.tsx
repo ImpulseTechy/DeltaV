@@ -103,11 +103,7 @@ export default function Footer() {
                   Workshops
                 </Link>
               </li>
-              <li>
-                <Link href="/webinars" className="hover:text-white transition-colors">
-                  Webinars
-                </Link>
-              </li>
+
               <li>
                 <Link href="/workshops#book" className="hover:text-white transition-colors">
                   Book a Workshop

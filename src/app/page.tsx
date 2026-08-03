@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '@/components/ui/Button'
 import CourseCard from '@/components/ui/CourseCard'
 import SectionHeading from '@/components/ui/SectionHeading'
-import { Wifi, Cpu, Satellite, Settings, Zap, Video } from 'lucide-react'
+import { Wifi, Cpu, Settings, Zap, Video, Plane, Satellite } from 'lucide-react'
 import { Metadata } from 'next'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -44,38 +44,39 @@ export default function Home() {
       id: 'WS-02',
       slug: 'robotics-embedded',
       icon: Cpu,
-      title: 'Robotics & Embedded',
-      desc: 'Arduino + sensors + autonomy logic.'
+      title: 'MicroPython & Hardware Control',
+      desc: '[PLACEHOLDER — content pending]'
     },
     {
       id: 'WS-03',
-      slug: 'cubesat-design',
-      icon: Satellite,
-      title: 'CubeSat Design',
-      desc: 'Build a 1U CubeSat structure and ground station.'
+      slug: 'idea-to-product',
+      icon: Cpu,
+      title: 'Idea to Product: Rapid Prototyping with IoT',
+      desc: 'Students build a personalised Desktop Companion Robot. From idea to a working device, start to finish.'
     },
     {
       id: 'WS-04',
-      slug: 'plc-automation',
-      icon: Settings,
-      title: 'PLC Automation',
-      desc: 'Ladder logic, Siemens TIA Portal, motor control.'
+      slug: 'drone-workshop',
+      icon: Plane,
+      title: 'Drone Workshop',
+      desc: 'Build and fly a small ESP32-based learning drone, controlled with Python.'
     },
     {
       id: 'WS-05',
-      slug: 'vfd-motor-drives',
-      icon: Zap,
-      title: 'VFD & Motor Drives',
-      desc: 'Variable frequency drives for EEE students.'
-    },
-    {
-      id: 'WS-06',
-      slug: 'online-webinar',
-      icon: Video,
-      title: 'Online Webinar',
-      desc: 'Any topic, online, 2–3 hours, zero equipment needed.'
+      slug: 'build-your-own-satellite',
+      icon: Satellite,
+      title: 'Build Your Own Satellite (Flagship)',
+      desc: 'Build a functional CubeSat and work with a real ground station setup.',
+      isFlagship: true
     }
   ]
+
+  const renderText = (text: string) => {
+    if (text.includes('[PLACEHOLDER')) {
+      return <span className="italic text-text-muted opacity-80">{text}</span>
+    }
+    return text
+  }
 
   const steps = [
     {
@@ -212,19 +213,22 @@ export default function Home() {
               return (
                 <div 
                   key={index}
-                  className="flex flex-col bg-[#1A1A1A] border border-border rounded-lg p-5 transition-colors duration-200 hover:border-border-light min-h-[220px]"
+                  className={`group flex flex-col bg-[#1A1A1A] border rounded-lg p-5 transition-all duration-300 min-h-[220px] hover:-translate-y-1 hover:bg-[#1E1E1E] ${
+                    topic.isFlagship ? 'border-orange hover:border-orange-light shadow-[0_0_15px_rgba(255,107,0,0.1)] hover:shadow-[0_0_25px_rgba(255,107,0,0.25)]' : 'border-border hover:border-orange/60 hover:shadow-[0_0_20px_rgba(255,107,0,0.1)]'
+                  }`}
                 >
                   <div className="flex items-start justify-between mb-4">
-                    <span className="font-mono text-[10px] text-[#52525B] tracking-wider">
+                    <span className="font-mono text-[10px] text-[#52525B] tracking-wider flex items-center gap-2">
                       [{topic.id}]
+                      {topic.isFlagship && <span className="text-orange bg-orange/10 px-1.5 py-0.5 rounded">[FLAGSHIP]</span>}
                     </span>
-                    <IconComponent className="w-6 h-6 text-orange" />
+                    <IconComponent className="w-6 h-6 text-orange transition-transform duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="font-display text-white text-[1.2rem] uppercase font-semibold mb-2">
-                    {topic.title}
+                  <h3 className="font-display text-white text-[1.2rem] uppercase font-semibold mb-2 transition-colors duration-300 group-hover:text-orange-light">
+                    {renderText(topic.title)}
                   </h3>
                   <p className="font-body text-[13px] text-[#A1A1AA] leading-relaxed mb-6">
-                    {topic.desc}
+                    {renderText(topic.desc)}
                   </p>
                   <div className="mt-auto pt-2">
                     <Button variant="text" size="sm" href={`/workshops/${topic.slug}`}>

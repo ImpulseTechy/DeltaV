@@ -43,9 +43,8 @@ export const STATES = [
 
 export const TOPICS = [
   { value: 'iot-esp32', label: 'IoT with ESP32' },
-  { value: 'robotics-embedded', label: 'Robotics & Embedded Systems' },
-  { value: 'cubesat-design', label: 'CubeSat Design & Build' },
-  { value: 'plc-automation', label: 'PLC Automation' },
-  { value: 'vfd-motor-drives', label: 'VFD & Motor Drives' },
-  { value: 'online-webinar', label: 'Online Webinar (any topic)' }
+  { value: 'robotics-embedded', label: 'MicroPython & Hardware Control' },
+  { value: 'idea-to-product', label: 'Idea to Product: Rapid Prototyping with IoT' },
+  { value: 'drone-workshop', label: 'Drone Workshop' },
+  { value: 'build-your-own-satellite', label: 'Build Your Own Satellite (Flagship)' }
 ]

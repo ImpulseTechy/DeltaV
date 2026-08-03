@@ -42,7 +42,6 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Courses', href: '/courses' },
     { name: 'Workshops', href: '/#workshop-topics' },
-    { name: 'Webinars', href: '/webinars' },
     { name: 'Roadmaps', href: '/roadmaps' },
     { name: 'About', href: '/about' },
   ]

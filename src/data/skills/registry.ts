@@ -10336,50 +10336,7 @@ export const skillsRegistry: Record<string, Skill> = {
           "nvidia-jetson"
       ]
   },
-  'basic-electrical-engineering': {
-      id: "basic-electrical-engineering",
-      title: "Basic Electrical Engineering",
-      icon: "cpu",
-      description: "Master the concepts and practical applications of Basic Electrical Engineering in industrial automation.",
-      difficulty: "Intermediate",
-      estimatedTime: "6 hours",
-      whyLearnThis: "Basic Electrical Engineering is a critical skill for building robust automated systems.",
-      learningOutcomes: [
-          "Understand the fundamentals of Basic Electrical Engineering",
-          "Implement Basic Electrical Engineering in real-world scenarios",
-          "Troubleshoot Basic Electrical Engineering systems"
-      ],
-      resources: {
-          videos: [
-              {
-                  id: "v1-basic-electrical-engineering",
-                  title: "Basic Electrical Engineering Masterclass",
-                  platform: "YouTube",
-                  difficulty: "Beginner",
-                  estimatedTime: "1 Hour",
-                  description: "A comprehensive introduction to Basic Electrical Engineering.",
-                  url: "#"
-              }
-          ],
-          books: [],
-          documentation: [],
-          simulations: [],
-          exercises: [],
-          projects: [],
-          interviewQuestions: [],
-          quiz: {
-              id: "q1-basic-electrical-engineering",
-              questionCount: 5,
-              passingScore: 80,
-              difficulty: "Intermediate",
-              completed: false
-          }
-      },
-      tags: [
-          "automation",
-          "basic-electrical-engineering"
-      ]
-  },
+
   'electrical-safety': {
       id: "electrical-safety",
       title: "Electrical Safety",
@@ -10803,53 +10760,7 @@ export const skillsRegistry: Record<string, Skill> = {
           "three-phase-systems"
       ]
   },
-  'industrial-sensors': {
-      id: "industrial-sensors",
-      title: "Industrial Sensors",
-      icon: "bot",
-      description: "Master the concepts and practical applications of Industrial Sensors in industrial automation.",
-      difficulty: "Advanced",
-      estimatedTime: "7 hours",
-      whyLearnThis: "Industrial Sensors is a critical skill for building robust automated systems.",
-      learningOutcomes: [
-          "Understand the fundamentals of Industrial Sensors",
-          "Implement Industrial Sensors in real-world scenarios",
-          "Troubleshoot Industrial Sensors systems"
-      ],
-      resources: {
-          videos: [
-              {
-                  id: "v1-industrial-sensors",
-                  title: "Industrial Sensors Masterclass",
-                  platform: "YouTube",
-                  difficulty: "Beginner",
-                  estimatedTime: "1 Hour",
-                  description: "A comprehensive introduction to Industrial Sensors.",
-                  url: "#"
-              }
-          ],
-          books: [],
-          documentation: [],
-          simulations: [],
-          exercises: [],
-          projects: [],
-          interviewQuestions: [],
-          quiz: {
-              id: "q1-industrial-sensors",
-              questionCount: 5,
-              passingScore: 80,
-              difficulty: "Advanced",
-              completed: false
-          }
-      },
-      tags: [
-          "automation",
-          "industrial-sensors"
-      ],
-      prerequisites: [
-          "industrial-wiring"
-      ]
-  },
+
   'proximity-sensors': {
       id: "proximity-sensors",
       title: "Proximity Sensors",
@@ -11508,53 +11419,7 @@ export const skillsRegistry: Record<string, Skill> = {
           "digital-inputs-outputs"
       ]
   },
-  'ladder-logic': {
-      id: "ladder-logic",
-      title: "Ladder Logic",
-      icon: "settings",
-      description: "Master the concepts and practical applications of Ladder Logic in industrial automation.",
-      difficulty: "Beginner",
-      estimatedTime: "11 hours",
-      whyLearnThis: "Ladder Logic is a critical skill for building robust automated systems.",
-      learningOutcomes: [
-          "Understand the fundamentals of Ladder Logic",
-          "Implement Ladder Logic in real-world scenarios",
-          "Troubleshoot Ladder Logic systems"
-      ],
-      resources: {
-          videos: [
-              {
-                  id: "v1-ladder-logic",
-                  title: "Ladder Logic Masterclass",
-                  platform: "YouTube",
-                  difficulty: "Beginner",
-                  estimatedTime: "1 Hour",
-                  description: "A comprehensive introduction to Ladder Logic.",
-                  url: "#"
-              }
-          ],
-          books: [],
-          documentation: [],
-          simulations: [],
-          exercises: [],
-          projects: [],
-          interviewQuestions: [],
-          quiz: {
-              id: "q1-ladder-logic",
-              questionCount: 5,
-              passingScore: 80,
-              difficulty: "Beginner",
-              completed: false
-          }
-      },
-      tags: [
-          "automation",
-          "ladder-logic"
-      ],
-      prerequisites: [
-          "analog-inputs-outputs"
-      ]
-  },
+
   'introduction-to-hmi': {
       id: "introduction-to-hmi",
       title: "Introduction to HMI",
